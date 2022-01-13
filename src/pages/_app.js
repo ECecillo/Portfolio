@@ -1,9 +1,13 @@
-//import Layout from '../components/layout/Layout';
-import '../styles/globals.css'
+import Theme from '../styles/theme';
+
 
 function MyApp({ Component, pageProps }) {
   return (
-      <Component {...pageProps} />
+    <>
+      <Theme>
+        <Component {...pageProps} />
+      </Theme>
+    </>
   );
 }
 
