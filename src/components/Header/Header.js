@@ -1,15 +1,20 @@
-import react from "react";
+import React from "react";
 // module de nextjs permettant de faire les liens entre les pages plus facilement avec le composant <Link>
-import Link from "next/link"; 
+import Link from "next/link";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { Container } from "../../layout/LayoutStyles";
+import { Container, PageLink } from "./HeaderStyles"
 
 
-
-const Header = () => (
-    <Container>
-        
-    </Container>
-);
-
-export default Header;
+export default function Header() {
+    return (
+        <Container>
+            <PageLink>
+                <li>
+                    <Link href="/">
+                        Accueil
+                    </Link>
+                </li>
+            </PageLink>
+        </Container>
+    )
+};

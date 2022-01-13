@@ -1,7 +1,7 @@
 import Theme from '../styles/theme';
 
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <Theme>
@@ -10,5 +10,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp
