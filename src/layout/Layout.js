@@ -1,12 +1,12 @@
 import React from 'react';
-import Container from '../layout/LayoutStyles'
+import { Container } from './LayoutStyles'
+import Header from '../components/Header/Header';
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
     return (
         <Container>
-            {{/* Header (Navbar) */ }}
-            <main>{children}</main>
-            {{/* Footer */ }}
+            <Header />
+            {children}
         </Container>
     )
 }

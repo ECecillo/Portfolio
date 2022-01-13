@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import Layout from '../layouts/Layout';
+import Layout from '../layout/Layout';
+import React from 'react';
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
-
-    </Layout>  
-    );
+    </Layout>
+  );
 };
+
+export default Home;

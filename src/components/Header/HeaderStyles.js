@@ -16,3 +16,14 @@ export const Container = styled.div`
         grid-row-gap: .5rem;
     }
 `;
+
+export const PageLink = styled.div`
+    grid-area: 1 / 1 / 1 / 2; 
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-content: center;
+    @media ${props => props.theme.breakpoints.sm} {
+        grid-area: 1 / 1 / 1 / 2;
+    } 
+`;
