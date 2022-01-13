@@ -7,9 +7,10 @@ export default {
     },
     colors: {
         moss:"#323339",
+        color: "#212121",
+        background:"#EBECED",
         cashmere:"#CBC5C1",
         french: "#A2AAB0",
-        white:"#EBECED",
         denim:"#4C586F",
         gunmetal:"#3E3E3B"
     },
