@@ -29,7 +29,7 @@ export const LinkDiv = styled.div`
     } 
 `;
 export const NavLink = styled.a`
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 32px;
     color: rgba(0, 0, 0, 0.75);
     transition: 0.4s ease;

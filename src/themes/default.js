@@ -7,7 +7,9 @@ export default {
         test1: "Montserrat"
     },
     colors: {
+        venice:"#6CBF84",
         moss:"#323339",
+        wash: "#EBECED",
         color: "#212121",
         background:"#EBECED",
         cashmere:"#CBC5C1",

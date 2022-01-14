@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle `
         scroll-behavior: smooth;
     }
     body {
-        font-family: ${props => props.theme.fonts.main};
+        font-family: ${props => props.theme.fonts.special};
         background: ${props => props.theme.colors.background};
         color: ${props => props.theme.colors.color};
         cursor: default;
