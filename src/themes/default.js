@@ -3,6 +3,7 @@ export default {
     fonts: {
         title: "Space Grotesk, sans-serif",
         main: "Space Grotesk, sans-serif",
+        special: "Source Code Pro, monospace",
         test1: "Montserrat"
     },
     colors: {
