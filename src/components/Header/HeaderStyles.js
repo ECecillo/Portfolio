@@ -17,7 +17,7 @@ export const Container = styled.div`
     }
 `;
 
-export const PageLink = styled.div`
+export const LinkDiv = styled.div`
     grid-area: 1 / 1 / 1 / 2; 
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
@@ -26,4 +26,18 @@ export const PageLink = styled.div`
     @media ${props => props.theme.breakpoints.sm} {
         grid-area: 1 / 1 / 1 / 2;
     } 
+`;
+export const NavLink = styled.a`
+    font-size: 1.5rem;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.75);
+    transition: 0.4s ease;
+    &:hover {
+        color: #AB3E16;
+        opacity: 1;
+        cursor: pointer;
+    }
+    @media ${(props) => props.theme.breakpoints.sm} {
+        padding: 0.5rem;
+    }
 `;
