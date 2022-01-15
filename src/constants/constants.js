@@ -30,6 +30,7 @@ export const projects = [
     {
       recherche: true,
       "fr": {
+        Poste: "Développeur Web Front-End",
         Description: "Autodidacte et passionné d'Informatique ! Je suis Etudiant en L3 à Lyon à la Recherche d'un stage en tant que développeur Front-End.",
         Contact: {
           adresse: "41 Vieille Route",
@@ -40,6 +41,7 @@ export const projects = [
         }
       },
       "en": {
+        Job: "Front-End Developer",
         Description: "Self-taught and passionate about Computer-science!  I'm a Third Year Student at Lyon looking for an Internship as a Front-End developer.",
         Contact: {
           adress: "41 Vieille Route",
