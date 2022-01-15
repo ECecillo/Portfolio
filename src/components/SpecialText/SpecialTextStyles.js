@@ -1,9 +1,5 @@
 import styled from "styled-components"
-import { keyframes } from "styled-components";
-
-// Variable pour la rapidité du curseur, animation et Nombre de lettre.
-const typeSpeed = '4s';
-const blinkSpeed = "750ms";
+import { blink, blinkSpeed, typeSpeed, typewriter } from "../../styles/animation";
 
 export const Container = styled.div`
     display: grid;
@@ -23,25 +19,13 @@ export const Container = styled.div`
     }
 `;
 
-
-const blink = keyframes`
-    to {
-        background: transparent;
-    }
-`;
-const typewriter = keyframes`
-    to {
-        left: 100%;
-    }
-
-`;
-
 export const Head1 = styled.h1`
     font-family: ${props => props.theme.fonts.special};
     position: relative;
     justify-self: center;
     text-align: center;
     border: ${props => props.theme.colors.wash};
+    
     &::before, 
     ::after {
         content: '';
