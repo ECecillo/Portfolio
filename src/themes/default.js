@@ -7,6 +7,7 @@ export default {
         test1: "Montserrat"
     },
     colors: {
+        rainbowPurple: "linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)",
         venice:"#6CBF84",
         moss:"#323339",
         wash: "#EBECED",

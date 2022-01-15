@@ -1,16 +1,16 @@
-import { useRouter } from 'next/router'
 import React from 'react';
 import { Container } from './LayoutStyles'
 import Header from '../components/Header/Header';
+import { useRouter } from 'next/router';
 
 
 
 export default function Layout({children}) {
-    //let userLa = navigator.language || navigator.userLanguage; // Récupère la langue du navigateur.
     const router = useRouter();
+    const lang = router.locale;
     return (
         <Container>
-            <Header language={router.locale}/>
+            <Header language={lang}/>
             {children}
         </Container>
     );

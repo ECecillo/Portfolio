@@ -10,7 +10,7 @@ import logo from "../../../public/images/Logo.png";
 
 export default function Header(props) {
     //let textLink = [];
-    let l = props.languages;
+    let l = props.language;
     let textLanguage = l === "fr" ? Navbar[0].fr.map(element =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
