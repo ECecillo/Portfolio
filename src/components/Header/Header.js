@@ -5,13 +5,17 @@ import Image from 'next/image';
 import { FiMoon } from "react-icons/fi";
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineGlobal } from 'react-icons/ai';
 import { Container, LinkDiv, LogoDiv, NavLink, SocialDiv, SocialIcons } from "./HeaderStyles"
-import { Navbar, } from "../../constants/site";
 import logo from "../../../public/images/Logo.png";
 
 export default function Header(props) {
-    //let textLink = [];
-    let l = props.language;
-    let textLanguage = l === "fr" ? Navbar[0].fr.map(element =>
+    let localLanguage = props.language;
+    const Navbar = [
+        {
+            "fr": ["Accueil", "Moi","Projets"],
+            "en": ["Home","Projects"]
+        }
+    ];
+    let textLanguage = localLanguage === "fr" ? Navbar[0].fr.map(element =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
                 <NavLink>{element}</NavLink>
@@ -19,7 +23,7 @@ export default function Header(props) {
         </li>
     ) : Navbar[0].en.map(element =>
         <li key={element}>
-            <Link href="/">
+            <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
                 <NavLink>{element}</NavLink>
             </Link>
         </li>

@@ -282,9 +282,9 @@ export const LinkIconImg = styled.div`
     height: ${({ large }) => large ? '32px' : '16px'};
   }
 `
-export const FadeSection = styled.p`
+export const FadeSection = styled.div`
   opacity: 0;
   transform: translateY(3rem);
   animation: 
-    ${fadeInUp} 2s ease 6s forwards;
+    ${fadeInUp} 2s ease ${typeSpeed} forwards;
 `;
