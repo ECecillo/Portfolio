@@ -6,16 +6,18 @@ export const Container = styled.div`
     font-size: 5rem;
     grid-template-columns: 1fr;
     padding: 1rem;
-    padding-top: 4rem;
+    margin-top: 4rem;
     
     @media ${props => props.theme.breakpoints.sm} {
         display: grid;
         grid-template-columns: 1fr;
         grid-column-gap: 0.5rem;
         grid-row-gap: .5rem;
-        margin: auto;
+
+        margin: 0;
+        margin: 3rem 0;
+        padding: 0;
         font-size: 1rem;
-        width: 50%;
     }
 `;
 
@@ -44,7 +46,10 @@ export const Head1 = styled.h1`
         width: .125rem;
         background: black;
         animation: 
-            ${typewriter} ${typeSpeed} steps(13) 1s forwards, ${blink} ${blinkSpeed} steps(13) infinite;
+            ${typewriter} ${typeSpeed} steps(13) 1s forwards, ${blink} ${blinkSpeed} steps(15) infinite;
+    }
+    @media ${props => props.theme.breakpoints.sm} {
+        font-size: 3rem;
     }
 `;
 

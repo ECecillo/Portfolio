@@ -37,7 +37,7 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: auto;
-  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  padding: ${(props) => props.main ? '4rem 0' : '0'};
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
@@ -63,7 +63,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.colors.gunmetal}
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -286,5 +286,5 @@ export const FadeSection = styled.div`
   opacity: 0;
   transform: translateY(3rem);
   animation: 
-    ${fadeInUp} 2s ease ${typeSpeed} forwards;
+    ${fadeInUp} 2s ease ${low => low ? "2s" : typeSpeed} forwards;
 `;
