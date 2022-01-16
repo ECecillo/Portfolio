@@ -7,7 +7,7 @@ import { FadeSection } from '../styles/GlobalComponentsStyles/globalC';
 import { useRouter } from 'next/router';
 
 const Home = (props) => {
-  const showSpecial = Personnal_Info[0].recherche ? <SpecialText /> : null;
+  const showSpecial = Personnal_Info.recherche ? <SpecialText /> : null;
   const router = useRouter();
   const lang = router.locale;
   return (
