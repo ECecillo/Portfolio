@@ -8,6 +8,7 @@ export default {
     },
     colors: {
         rainbowPurple: "linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)",
+        darkblue: "radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );",
         venice:"#6CBF84",
         moss:"#323339",
         wash: "#EBECED",

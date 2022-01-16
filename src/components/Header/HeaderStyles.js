@@ -56,7 +56,7 @@ export const LogoDiv = styled.div`
     cursor: pointer;
     @media ${(props) => props.theme.breakpoints.sm} {
       grid-area: 1 / 1 / 2 / 4;
-      margin: 0;
+      margin: auto;
       align-items: center;
       width: 20%;
     }
@@ -101,6 +101,7 @@ export const MobileIcon = styled.div`
         position: absolute;
         right: 0;
         justify-self: center;
+        margin: auto;
         transform: translate(-100%, 50%);
         font-size: 2rem;
         cursor: pointer;
