@@ -4,14 +4,17 @@ import SpecialText from '../components/SpecialText/SpecialText';
 import { Personnal_Info } from '../constants/constants';
 import Presentation from '../components/Presentation/Presentation';
 import { FadeSection } from '../styles/GlobalComponentsStyles/globalC';
+import { useRouter } from 'next/router';
 
-const Home = () => {
-  const showSpecial = Personnal_Info[0].recherche ? <SpecialText /> : null; 
+const Home = (props) => {
+  const showSpecial = Personnal_Info[0].recherche ? <SpecialText /> : null;
+  const router = useRouter();
+  const lang = router.locale;
   return (
     <Layout>
       {showSpecial}
       <FadeSection>
-        <Presentation/>
+        <Presentation language={lang}/>
       </FadeSection>
     </Layout>
   );

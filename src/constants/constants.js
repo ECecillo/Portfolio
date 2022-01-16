@@ -29,7 +29,7 @@ export const projects = [
   export const Personnal_Info = [
     {
       recherche: true,
-      "fr": {
+      fr: {
         Poste: "Développeur Web Front-End",
         Description: "Autodidacte et passionné d'Informatique ! Je suis Etudiant en L3 à Lyon à la Recherche d'un stage en tant que développeur Front-End.",
         Contact: {
@@ -40,7 +40,7 @@ export const projects = [
           email: "enzo.cecillon@gmail.com"
         }
       },
-      "en": {
+      en: {
         Job: "Front-End Developer",
         Description: "Self-taught and passionate about Computer-science!  I'm a Third Year Student at Lyon looking for an Internship as a Front-End developer.",
         Contact: {

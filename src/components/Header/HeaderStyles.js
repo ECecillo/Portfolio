@@ -14,6 +14,8 @@ export const Container = styled.div`
         grid-template-rows: repeat(2, 60px);
         grid-column-gap: 0.5rem;
         grid-row-gap: .5rem;
+        padding-top: 2rem;
+        padding-bottom: 0;
     }
 `;
 
@@ -21,15 +23,17 @@ export const LinkDiv = styled.div`
     grid-area: 1 / 1 / 1 / 2; 
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
-    justify-items: stretch;
+    justify-items: center;
     align-self: center;
     align-content: center;
     @media ${props => props.theme.breakpoints.sm} {
         grid-area: 1 / 1 / 1 / 2;
+        display: none;
     } 
 `;
 export const NavLink = styled.a`
     font-size: 1.5rem;
+    font-weight: 400;
     line-height: 32px;
     color: rgba(0, 0, 0, 0.75);
     transition: 0.4s ease;
@@ -44,13 +48,17 @@ export const NavLink = styled.a`
 `;
 export const LogoDiv = styled.div`
     grid-area: 1 / 2 / 1 / 3;
-    display: flex;
+    display: grid;
     flex-direction: row;
     align-content: center;
-    width: 75%;
+    justify-self: center;
+    width: 25%;
+    cursor: pointer;
     @media ${(props) => props.theme.breakpoints.sm} {
-      grid-area: 1 / 1 / 2 / 3;
-      width: 100%;
+      grid-area: 1 / 1 / 2 / 4;
+      margin: 0;
+      align-items: center;
+      width: 20%;
     }
 `;
 
@@ -67,6 +75,7 @@ export const SocialDiv = styled.div`
     @media ${(props) => props.theme.breakpoints.sm} {
       align-items: center;
       grid-area: 1 / 3 / 1 / 4;
+      display: none;
     }
 `;
 export const SocialIcons = styled.a`
@@ -84,15 +93,22 @@ export const SocialIcons = styled.a`
     }
 `;
 
-export const DropDownContent = styled.div`
+export const MobileIcon = styled.div`
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    &:hover {
+
+    @media ${props => props.theme.breakpoints.sm} {
         display: block;
-        background-color: #000;
+        position: absolute;
+        right: 0;
+        justify-self: center;
+        transform: translate(-100%, 50%);
+        font-size: 2rem;
+        cursor: pointer;
     }
 `;
+
+export const Menu = styled.div`
+    @media ${props => props.theme.breakpoints.sm} {
+        display: none;
+    }
+`
