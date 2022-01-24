@@ -4,7 +4,7 @@ export const projects = [
     description: "Projet réalisé en 2020 dans le but de gérer une API, affichage, création, modification. ",
     image: '/images/1.png',
     tags: ['JavaScript, Html, CSS'],
-    source: 'https://forge.univ-lyon1.fr/p1805901/projet-lifap4',
+    source: 'https://forge.univ-lyon1.fr/p1805901/lifap5-projet-ae',
     id: 0,
   },
   {
@@ -23,6 +23,33 @@ export const projects = [
     source: '',
     visit: '',
     id: 2,
+  }, 
+  {
+    title: 'PinterestLike',
+    description: "Projet réalisé au Printemps 2020, ",
+    image: '/images/4.jpg',
+    tags: ['SQL', 'PHP', 'CSS'],
+    source: 'https://forge.univ-lyon1.fr/p1805901/bdw-projet-enlu',
+    visit: '',
+    id: 3,
+  },
+  {
+    title: 'Uno',
+    description: "Projet réalisé au Printemps 2021, ",
+    image: '/images/5.jpg',
+    tags: ['C++', 'SDL'],
+    source: 'https://forge.univ-lyon1.fr/p1805901/projet-lfap4',
+    visit: '',
+    id: 4,
+  },
+  {
+    title: 'A* Pathfinding',
+    description: "Projet réalisé en Autonme 2021, ",
+    image: '/images/6.jpg',
+    tags: ['SQL', 'PHP', 'CSS'],
+    source: 'https://forge.univ-lyon1.fr/p1805901/tp8_graph_dijsktra',
+    visit: '',
+    id: 5,
   }
 ];
 
@@ -42,7 +69,7 @@ export const Personnal_Info =
   },
   en: {
     Job: "Front-End Developer",
-    Description: "Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. Today, I code in C++,  React/Nextjs and Javascript projects with a team or at Home, which I post on Github. Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃",
+    Description: "Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. Today, I code in C++,  React/Nextjs and Javascript, projects with a team or at Home, which I post on Github. Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃",
     Contact: {
       adress: "41 Vieille Route",
       city: "Chaponost",
