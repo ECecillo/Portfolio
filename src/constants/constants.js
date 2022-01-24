@@ -31,7 +31,7 @@ export const Personnal_Info =
   recherche: true,
   fr: {
     Poste: "Développeur Web Front-End",
-    Description: "Autodidacte et passionné d'Informatique ! Je suis Etudiant en L3 à Lyon à la Recherche d'un stage en tant que développeur Front-End.",
+    Description: "Passionné par les nouvelles Technologies et la création d'Application depuis mon adolescence. Aujourd'hui, je code en C++, React/Nextjs et Javascript des projets en équipes ou en solo que je poste sur Github. N'hésitez pas à checker mes réseaux pour plus d'info 😉 , à très bientôt 😃.",
     Contact: {
       adress: "41 Vieille Route",
       city: "Chaponost",
@@ -42,7 +42,7 @@ export const Personnal_Info =
   },
   en: {
     Job: "Front-End Developer",
-    Description: "Self-taught and passionate about Computer-science! I'm a Third Year Student at Lyon looking for an Internship as a Front-End Developer.",
+    Description: "Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. Today, I code in C++,  React/Nextjs and Javascript projects with a team or at Home, which I post on Github. Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃",
     Contact: {
       adress: "41 Vieille Route",
       city: "Chaponost",

@@ -1,7 +1,7 @@
 import { Personnal_Info } from '../../../constants/constants';
 
 import React from 'react'
-import { ContentParagraph, ContentTitle, Section, SectionContent } from './BioStyles';
+import { PContent, ContentTitle, Section, SectionContent } from './BioStyles';
 
 export default function Bio(props) {
     const lang = props.language;
@@ -18,29 +18,26 @@ export default function Bio(props) {
 
             info.push(
                 <SectionContent key={index}>
-                    <ContentTitle>{index}</ContentTitle>
-                    <ContentParagraph>
-                        {info_object["Contact"].adress + ","}<br/>
-                        {info_object["Contact"].city + " " + info_object["Contact"].postal_code}<br/>
-                        {info_object["Contact"].phone}<br/>
+                    <PContent>
+                        {info_object["Contact"].adress + ","}<br />
+                        {info_object["Contact"].city + " " + info_object["Contact"].postal_code}<br />
+                        {info_object["Contact"].phone}<br />
                         {info_object["Contact"].email}
-                    </ContentParagraph>
+                    </PContent>
                 </SectionContent>
             );
         }
         else {
             info.push(
-                <SectionContent key={index}>
-                    <ContentTitle>{index}</ContentTitle>
-                    <ContentParagraph>
-                        {info_object[index]}
-                    </ContentParagraph>
-                </SectionContent>
+                <PContent>
+                    {info_object[index]}
+                </PContent>
             );
         }
     }
     return (
         <Section>
+            <h2>Salut! Moi c'est Enzo 👋</h2>
             {info}
         </Section>
     )
