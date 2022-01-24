@@ -1,26 +1,27 @@
 import styled from "styled-components";
+import { SectionText } from "../../../styles/GlobalComponentsStyles/globalC";
 
 
 export const Section = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(
-        ${({ rowNumber }) => rowNumber
-        ? rowNumber
-        : "3"}, 1fr);
+    grid-template-rows: .1fr 1fr .1fr;
     margin: 0;
     grid-row-gap: 2rem;
+`;
+export const Header2 = styled.h2`
+
 `;
 export const SectionContent = styled.div`
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 `;
 
 export const ContentTitle = styled.h3`
-    grid-area: 1 / 1 / 2 / 1;
-    font-weight: 800;
+  grid-area: 1 / 1 / 2 / 1;
+  font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '50px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
@@ -49,6 +50,7 @@ export const ContentTitle = styled.h3`
   }
 `;
 
-export const ContentParagraph = styled.p`
+export const PContent = styled(SectionText)`
     grid-area: 2 / 1 / 3 / 1;
 `;
+

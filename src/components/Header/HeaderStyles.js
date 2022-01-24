@@ -67,11 +67,7 @@ export const SocialDiv = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    &:hover .DropDownContent {
-        display: block;
-    }
-
+    
     @media ${(props) => props.theme.breakpoints.sm} {
       align-items: center;
       grid-area: 1 / 3 / 1 / 4;
