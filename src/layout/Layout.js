@@ -22,7 +22,7 @@ export default function Layout({children}) {
 
     // true : la taille de la fenêtre est un 📱 .
     // false : ~ (//).
-    const  isMobile = size.width <= 640 ? true : false;
+    const isMobile = size.width <= 640 ? true : false;
 
     return (
         <Container>
