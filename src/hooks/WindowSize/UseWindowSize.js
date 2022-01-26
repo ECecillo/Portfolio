@@ -24,7 +24,7 @@ function useWindowSize() {
                 });
             }
 
-            // Add event listener (pas nécessaire mais toujours utile).
+            // When we resize the window we call handleResize to change the value of widht and height.
             window.addEventListener("resize", handleResize);
 
             // Call handler right away so state gets updated with initial window size

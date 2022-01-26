@@ -121,7 +121,7 @@ export const heartBeat = keyframes`
 
 `;
 export const heartBeatWebkit = keyframes `
-    from {
+        from {
       -webkit-transform: scale(1);
               transform: scale(1);
       -webkit-transform-origin: center center;
