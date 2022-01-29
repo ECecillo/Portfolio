@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponentsStyles/globalC';
-import { GridContainer } from './ProjectsStyles';
+import ProjectCards from './Card/Card';
+
 
 export default function Projects() {
 
@@ -9,9 +10,7 @@ export default function Projects() {
       <Section nopadding id="projects">
         <SectionDivider />
         <SectionTitle main>Projects</SectionTitle>
-        <GridContainer>
-
-        </GridContainer>
+        <ProjectCards />
       </Section>
     </>
   );

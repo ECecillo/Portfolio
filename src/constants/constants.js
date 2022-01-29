@@ -18,7 +18,7 @@ export const projects = [
   {
     title: 'Star wars Scene',
     description: "Création d'une scène avec des objets 3D en utilisant la librairie GKIT.",
-    image: '/images/3.jpg',
+    image: '/images/3.png',
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Star_Wars_Scene_GKIT',
     visit: '',
@@ -26,8 +26,8 @@ export const projects = [
   }, 
   {
     title: 'PinterestLike',
-    description: "Site qui reprend le principe de Pinterest avec la visualisation d'images stockés sur une BDD. On gère également l'inscription, la connexion d'utilisateurs.",
-    image: '/images/4.jpg',
+    description: "Reprend le principe de Pinterest avec la visualisation d'images stockés sur une BDD. On gère également l'inscription, la connexion d'utilisateurs.",
+    image: '/images/4.png',
     tags: ['SQL', 'PHP', 'CSS'],
     source: 'https://github.com/ECecillo/PinterestLike',
     visit: '',
@@ -36,7 +36,7 @@ export const projects = [
   {
     title: 'Uno',
     description: "Reproduction du jeux de cartes du Uno avec ces variantes et la possibilité de jouer avec une IA. Il y a 2 versions, une version texte et une version Graphique.",
-    image: '/images/5.jpg',
+    image: '/images/5.png',
     tags: ['C++', 'SDL'],
     source: 'https://github.com/ECecillo/Uno',
     visit: '',
@@ -45,11 +45,29 @@ export const projects = [
   {
     title: 'A* Pathfinding',
     description: "Application de l'algorithme A* avec une visualisation du résultat finale dans le Terminale.",
-    image: '/images/6.jpg',
+    image: '/images/6.png',
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Astar_Pathfinding',
     visit: '',
     id: 5,
+  },
+  {
+    title: 'Memory',
+    description: "Site qui regroupe des jeux de mémoires, réalisés avec HTML/CSS et JS Vanilla.",
+    image: '/images/7.png',
+    tags: ['Html', 'Css', 'JS'],
+    source: 'https://github.com/ECecillo/MemoryWeb',
+    visit: 'http://ececillo.me/MemoryWeb/',
+    id: 6,
+  },
+  {
+    title: 'Arbre Rouge et Noir',
+    description: "Visualisation et mesure des performances entre un Arbre Rouge et Noir et un Arbre Binaire de Recherche.",
+    image: '/images/8.png',
+    tags: ['C++'],
+    source: 'https://github.com/ECecillo/Red_Black_Tree',
+    visit: '',
+    id: 7,
   }
 ];
 
