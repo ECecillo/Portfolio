@@ -44,7 +44,7 @@ export const Head1 = styled.h1`
     }
     &::after {
         width: .125rem;
-        background: black;
+        background: ${props => props.theme.colors.color};
         animation: 
             ${typewriter} ${typeSpeed} steps(13) 1s forwards, ${blink} ${blinkSpeed} steps(15) infinite;
     }

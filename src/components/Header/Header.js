@@ -4,39 +4,50 @@ import Link from "next/link";
 import Image from 'next/image';
 import { FiMoon } from "react-icons/fi";
 import { FaBars } from 'react-icons/fa';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineGlobal } from 'react-icons/ai';
-import {  Container, LinkDiv, LogoDiv, MobileIcon, NavLink, SocialDiv, SocialIcons } from "./HeaderStyles"
+import {
+    AiFillGithub,
+    AiFillLinkedin,
+    AiFillTwitterCircle,
+    AiOutlineGlobal
+} from 'react-icons/ai';
+import {
+    Container,
+    LinkDiv,
+    LogoDiv,
+    MobileIcon,
+    NavLink,
+    SocialDiv,
+    SocialIcons
+} from "./HeaderStyles"
+
 import logo from "../../../public/images/Logo.png";
 import { FadeSection } from "../../styles/GlobalComponentsStyles/globalC";
+import { Navbar } from "./data/data";
 
 export default function Header(props) {
     let localLanguage = props.language;
-    const Navbar = [
-        {
-            "fr": ["Accueil", "Moi", "Projets"],
-            "en": ["Home", "Me", "Projects"]
-        }
-    ];
-    let textLanguage = localLanguage === "fr" ? Navbar[0].fr.map(element =>
-        <li key={element}>
-            <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
-                <NavLink>{element}</NavLink>
-            </Link>
-        </li>
-    ) : Navbar[0].en.map(element =>
+
+    const changeTheme = () => {
+        props.toggleTheme();
+    }
+    
+    const Navbar_Content = localLanguage === "fr" ? Navbar.fr : Navbar.en;
+
+    let textLanguage = Navbar_Content.map((element) =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
                 <NavLink>{element}</NavLink>
             </Link>
         </li>
     );
+
     return (
-        <FadeSection low>
+        <FadeSection>
             <Container>
                 <LogoDiv>
-                    <Image src={logo} alt="Logo du site" href="/"/>
+                    <Image src={logo} alt="Logo du site" href="/" />
                 </LogoDiv>
-                <MobileIcon onClick={props.toggle}>
+                <MobileIcon>
                     <FaBars />
                 </MobileIcon>
                 <LinkDiv>
@@ -44,10 +55,14 @@ export default function Header(props) {
                 </LinkDiv>
                 <SocialDiv>
                     <SocialIcons>
-                        <AiOutlineGlobal size="2rem" />
+                        <Link href={"/"}
+                            locale={localLanguage === "en-US" ? "fr"
+                                : "en-US"}>
+                            <AiOutlineGlobal size="2rem" />
+                        </Link>
                     </SocialIcons>
                     <SocialIcons>
-                        <FiMoon size="2rem" />
+                        <FiMoon size="2rem" onClick={changeTheme}/>
                     </SocialIcons>
                     <SocialIcons href="https://github.com/ECecillo">
                         <AiFillGithub size="2rem" />

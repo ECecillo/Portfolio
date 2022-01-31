@@ -2,20 +2,22 @@ import { Personnal_Info } from '../../../constants/constants';
 
 import React from 'react'
 import { PContent, ContentTitle, Section, SectionContent } from './BioStyles';
+import { SectionText } from '../../../styles/GlobalComponentsStyles/globalC';
 
 export default function Bio(props) {
     const lang = props.language;
+    // Get the good translation for the text and return the object that match the language.
     const info_object = lang === "fr" ? Personnal_Info.fr : Personnal_Info.en;
-    /* Number of Row inside div */
 
+    // Array that will store the elements that we will render.
     let info = [];
-    /*  */
-    for (let index in info_object) {
+
+    for (let index in info_object) { // index = key index of Dictionnary.
+        // Don't render the job title again.
         if (index === "Job" || index === "Poste")
             continue;
         if (index === "Contact") {
-            /* On sait que Contact est un dictionnaire donc on doit aussi le parcourir avec une boucle. */
-
+            // Contact key has a dictionnary type value so we will get them one by one. (couldn't do it with an array)
             info.push(
                 <SectionContent key={index}>
                     <PContent>
@@ -29,9 +31,11 @@ export default function Bio(props) {
         }
         else {
             info.push(
-                <PContent>
-                    {info_object[index]}
-                </PContent>
+                <SectionContent key={index}>
+                    <PContent key={index}>
+                        {info_object[index]}
+                    </PContent>
+                </SectionContent>
             );
         }
     }
