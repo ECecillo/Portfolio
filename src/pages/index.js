@@ -11,8 +11,11 @@ const Home = (props) => {
   const showSpecial = Personnal_Info.recherche ? <SpecialText /> : null;
   const router = useRouter();
   const lang = router.locale;
+
+  const themeToggler = props.toggler;
+
   return (
-    <Layout>
+    <Layout toggler={themeToggler} theme={props.ambientTheme}>
       {showSpecial}
       <FadeSection>
         <Presentation language={lang}/>

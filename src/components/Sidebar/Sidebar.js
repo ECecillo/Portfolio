@@ -21,25 +21,20 @@ import {
 import Link from "next/link";
 import Image from 'next/image';
 import { LogoDiv } from '../Header/HeaderStyles';
-
+import {Navbar} from "../Header/data/data";
 
 
 
 export default function Sidebar(props) {
     let localLanguage = props.language;
-    const Navbar = [
-        {
-            "fr": ["Accueil", "Moi", "Projets"],
-            "en": ["Home", "Me", "Projects"]
-        }
-    ];
-    let textLanguage = localLanguage === "fr" ? Navbar[0].fr.map(element =>
+    
+    let textLanguage = localLanguage === "fr" ? Navbar.fr.map(element =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
                 <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
             </Link>
         </li>
-    ) : Navbar[0].en.map(element =>
+    ) : Navbar.en.map(element =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
                 <SidebarLink onClick={props.toggle}>{element}</SidebarLink>

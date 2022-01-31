@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: ${props => props.theme.colors.color};
     grid-template-rows: 1fr;
     grid-column-gap: 2rem;
     padding: 1rem;
@@ -35,7 +36,6 @@ export const NavLink = styled.a`
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
-    color: rgba(0, 0, 0, 0.75);
     transition: 0.4s ease;
     &:hover {
         color: #AB3E16;
@@ -76,16 +76,16 @@ export const SocialDiv = styled.div`
 `;
 export const SocialIcons = styled.a`
     transition: 0.3s ease;
-    color: black;
-    border-radius: 50px;
-    padding: 6px;
+    border-radius: 100%;
+    padding: 5px;
+    color: ${props => props.theme.colors.color};
     
     &:hover {
-        background-color: #000;
-        color: white;
-        transform: scale(1.2);
+        background-color: ${props => props.theme.colors.color};
+        color: ${props => props.theme.colors.background};
+        transform: scale(1.3);
         cursor: pointer;
-
+        padding: 3px;
     }
 `;
 
