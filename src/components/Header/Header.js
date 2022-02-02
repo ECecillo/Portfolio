@@ -20,7 +20,7 @@ import {
     SocialIcons
 } from "./HeaderStyles"
 
-import logo from "../../../public/images/Logo.png";
+import logo from "../../../public/images/Logo.svg";
 import { FadeSection } from "../../styles/GlobalComponentsStyles/globalC";
 import { Navbar } from "./data/data";
 
@@ -30,7 +30,9 @@ export default function Header(props) {
     const changeTheme = () => {
         props.toggleTheme();
     }
-    
+    const applyFilter = props.theme === "dark" 
+    ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
+    : '';
     const Navbar_Content = localLanguage === "fr" ? Navbar.fr : Navbar.en;
 
     let textLanguage = Navbar_Content.map((element) =>
@@ -44,10 +46,10 @@ export default function Header(props) {
     return (
         <FadeSection>
             <Container>
-                <LogoDiv>
-                    <Image src={logo} alt="Logo du site" href="/" />
+                <LogoDiv style={{filter: applyFilter}} >
+                    <Image src={logo} alt="Logo du site" href="/"/>
                 </LogoDiv>
-                <MobileIcon>
+                <MobileIcon onClick={props.toggle}>
                     <FaBars />
                 </MobileIcon>
                 <LinkDiv>
@@ -62,7 +64,7 @@ export default function Header(props) {
                         </Link>
                     </SocialIcons>
                     <SocialIcons>
-                        <FiMoon size="2rem" onClick={changeTheme}/>
+                        <FiMoon size="2rem" onClick={changeTheme} />
                     </SocialIcons>
                     <SocialIcons href="https://github.com/ECecillo">
                         <AiFillGithub size="2rem" />

@@ -15,7 +15,9 @@ const Home = (props) => {
   const themeToggler = props.toggler;
 
   return (
-    <Layout toggler={themeToggler} theme={props.ambientTheme}>
+    <Layout 
+    toggler={themeToggler} 
+    theme={props.ambientTheme}>
       {showSpecial}
       <FadeSection>
         <Presentation language={lang}/>

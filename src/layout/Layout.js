@@ -34,12 +34,14 @@ export default function Layout(props) {
                 isMobile={isMobile}
                 isOpen={isOpen}
                 toggle={sideBar}
+                toggleTheme={themeToggler}
+                theme={props.theme}
                 language={lang} />
 
             <Header
                 language={lang}
                 toggle={sideBar}
-                toggleTheme={themeToggler} 
+                toggleTheme={themeToggler}
                 theme={props.theme}/>
 
             {props.children}

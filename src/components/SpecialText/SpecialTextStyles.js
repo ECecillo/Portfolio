@@ -26,7 +26,7 @@ export const Head1 = styled.h1`
     position: relative;
     justify-self: center;
     text-align: center;
-    border: ${props => props.theme.colors.wash};
+    border: ${props => props.theme.colors.color};
     
     &::before, 
     ::after {
@@ -49,7 +49,7 @@ export const Head1 = styled.h1`
             ${typewriter} ${typeSpeed} steps(13) 1s forwards, ${blink} ${blinkSpeed} steps(15) infinite;
     }
     @media ${props => props.theme.breakpoints.sm} {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 `;
 

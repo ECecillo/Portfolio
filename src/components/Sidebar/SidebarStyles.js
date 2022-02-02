@@ -83,13 +83,13 @@ export const SidebarSocial = styled.div`
 export const SidebarIcons = styled.a`
     transition: 0.3s ease;
     z-index: 1;
-    color: black;
+    color: ${props => props.theme.colors.color};
     border-radius: 50px;
     padding: 6px;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: ${props => props.theme.colors.color};
+        color: ${props => props.theme.colors.background};
         transform: scale(1.2);
         cursor: pointer;
 
