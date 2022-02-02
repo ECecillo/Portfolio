@@ -4,7 +4,7 @@ import { BioLayout, LeftSection, MiddleSection, RightSection, FrameworkIcons, Fr
 import { Personnal_Info } from '../../constants/constants';
 import Profile from "../../../public/images/Photo.png";
 import Bio from './Bio/Bio';
-import {SiCplusplus, SiCss3, SiFigma, SiJavascript, SiReact} from "react-icons/si";
+import { SiCplusplus, SiCss3, SiFigma, SiJavascript, SiMysql, SiReact } from "react-icons/si";
 import Image from 'next/image';
 
 export default function Presentation(props) {
@@ -27,23 +27,24 @@ export default function Presentation(props) {
                     <Image src={Profile} href="https://www.linkedin.com/in/enzo-cecillon-27142a145/" />
                 </MiddleSection>
                 <RightSection>
-                    <FrameworkDiv>
-                        <FrameworkIcons>
-                            <SiReact size="4rem"/>
-                        </FrameworkIcons>
-                        <FrameworkIcons>
-                            <SiCplusplus size="4rem"/>
-                        </FrameworkIcons>
-                        <FrameworkIcons>
-                            <SiFigma size="4rem"/>
-                        </FrameworkIcons>
-                        <FrameworkIcons>
-                            <SiJavascript size="4rem"/>
-                        </FrameworkIcons>
-                        <FrameworkIcons>
-                            <SiCss3 size="4rem"/>
-                        </FrameworkIcons>
-                    </FrameworkDiv>
+                    <FrameworkIcons>
+                        <SiReact size="4rem" />
+                    </FrameworkIcons>
+                    <FrameworkIcons>
+                        <SiCplusplus size="4rem" />
+                    </FrameworkIcons>
+                    <FrameworkIcons>
+                        <SiFigma size="4rem" />
+                    </FrameworkIcons>
+                    <FrameworkIcons>
+                        <SiJavascript size="4rem" />
+                    </FrameworkIcons>
+                    <FrameworkIcons>
+                        <SiCss3 size="4rem" />
+                    </FrameworkIcons>
+                    <FrameworkIcons>
+                        <SiMysql size="4rem" />
+                    </FrameworkIcons>
                 </RightSection>
             </BioLayout>
         </>

@@ -104,8 +104,11 @@ export default function ProjectCards() {
                     <Card style={{ transform: styles.frame }
                     }>
 
-                        <CardBackground style={
-                            { backgroundImage: `url("${item.image}")`, transform: styles.background }}
+                        <CardBackground
+                            style={{
+                                backgroundImage: `url("${item.image}")`,
+                                transform: styles.background
+                            }}
                         />
                         <CardInfo>
                             <Header>{item.title}</Header>

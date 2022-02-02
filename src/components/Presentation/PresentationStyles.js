@@ -7,7 +7,7 @@ export const BioLayout = styled.div`
   justify-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
   }
 `;
 
@@ -22,7 +22,7 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 
@@ -46,19 +46,19 @@ export const MiddleSection = styled.div`
 export const RightSection = styled.div`
   grid-area : 1 / 3 / 1 / 4;
 
-  @media ${props => props.theme.breakpoints.sm} {
-    grid-area: 3 / 1 / 3 / 1;
-  }
-`;
-export const FrameworkDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, .01fr);
   grid-row-gap: 3rem;
   margin: 4rem 0;
 
   @media ${props => props.theme.breakpoints.sm} {
-    grid-template-columns: repeat(4, 1fr);
+    grid-area: 3 / 1 / 3 / 1;
+    grid-template-columns: repeat(3, .01fr);
+    grid-template-rows: repeat(3, .01fr);
+    grid-row-gap: 0;
+    margin: 2rem 0;
+    height: fit-content;
   }
 `;
 
