@@ -41,7 +41,7 @@ export default function Layout(props) {
             <Header
                 language={lang}
                 toggle={sideBar}
-                toggleTheme={themeToggler} 
+                toggleTheme={themeToggler}
                 theme={props.theme}/>
 
             {props.children}

@@ -26,7 +26,7 @@ export const Head1 = styled.h1`
     position: relative;
     justify-self: center;
     text-align: center;
-    border: ${props => props.theme.colors.wash};
+    border: ${props => props.theme.colors.color};
     
     &::before, 
     ::after {

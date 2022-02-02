@@ -66,7 +66,7 @@ export default function Header(props) {
                         </Link>
                     </SocialIcons>
                     <SocialIcons>
-                        <FiMoon size="2rem" onClick={changeTheme}/>
+                        <FiMoon size="2rem" onClick={changeTheme} />
                     </SocialIcons>
                     <SocialIcons href="https://github.com/ECecillo">
                         <AiFillGithub size="2rem" />
