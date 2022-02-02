@@ -29,7 +29,11 @@ export default function Header(props) {
 
     const changeTheme = () => {
         props.toggleTheme();
-    }
+    };
+
+    const applyFilter = props.theme === "dark" 
+    ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
+    : '';
     
     const Navbar_Content = localLanguage === "fr" ? Navbar.fr : Navbar.en;
 
@@ -44,7 +48,7 @@ export default function Header(props) {
     return (
         <FadeSection>
             <Container>
-                <LogoDiv>
+                <LogoDiv style={{filter: applyFilter}}>
                     <Image src={logo} alt="Logo du site" href="/" />
                 </LogoDiv>
                 <MobileIcon onClick={props.toggle}>
