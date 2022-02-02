@@ -58,7 +58,7 @@ export const LogoDiv = styled.div`
       grid-area: 1 / 1 / 2 / 4;
       margin: auto;
       align-items: center;
-      width: 20%;
+      width: 30%;
     }
 `;
 
@@ -98,8 +98,8 @@ export const MobileIcon = styled.div`
         right: 0;
         justify-self: center;
         margin: auto;
-        transform: translate(-100%, 50%);
-        font-size: 2rem;
+        transform: translate(-100%, 100%);
+        font-size: 2.5rem;
         cursor: pointer;
     }
 `;

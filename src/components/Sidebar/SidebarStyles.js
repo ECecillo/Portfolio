@@ -28,7 +28,7 @@ export const Icon = styled.div`
     right: 0;
     justify-self: center;
     transform: translate(-100%, 50%);
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
 `;
 
@@ -43,7 +43,7 @@ export const BrandDiv = styled.div`
     flex-direction: column;
     align-content: center;
     justify-self: center;
-    width: 25%;
+    width: 30%;
 `;
 
 export const SidebarMenu = styled.div`
