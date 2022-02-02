@@ -30,6 +30,9 @@ export default function Sidebar(props) {
     const changeTheme = () => {
         props.toggleTheme();
     };
+    const applyFilter = props.theme === "dark" 
+    ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
+    : '';
 
     let textLanguage = localLanguage === "fr" ? Navbar.fr.map(element =>
         <li key={element}>
@@ -49,7 +52,7 @@ export default function Sidebar(props) {
         <>
             {props.isMobile ?
                 <SidebarContainer isOpen={props.isOpen} onClick={props.toggle}>
-                    <BrandDiv>
+                    <BrandDiv style={{filter: applyFilter}}>
                         <Image src={logo} href="/" alt="Logo du site" />
                     </BrandDiv>
                     <Icon onClick={props.toggle}>
