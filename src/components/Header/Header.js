@@ -47,7 +47,7 @@ export default function Header(props) {
                 <LogoDiv>
                     <Image src={logo} alt="Logo du site" href="/" />
                 </LogoDiv>
-                <MobileIcon>
+                <MobileIcon onClick={props.toggle}>
                     <FaBars />
                 </MobileIcon>
                 <LinkDiv>
