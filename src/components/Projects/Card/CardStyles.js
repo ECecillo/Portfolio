@@ -17,6 +17,9 @@ export const Card = styled.div`
     inset #333 0 0 0 5px, // Assombris la carte.
     inset rgba(255, 255, 255, 0.5) 0 0 0 6px; // Ligne du Contour
   transition: 1s ${returnEasing};
+  @media ${(props) => props.theme.breakpoints.sm} {
+
+  }
 `;
 export const CardBackground = styled.div`
 
