@@ -15,19 +15,20 @@ import {
     SidebarIcons,
     SidebarLink,
     SidebarMenu,
-    SidebarSocial,
-    SidebarWrapper
+    SidebarSocial
 } from './SidebarStyles';
 import Link from "next/link";
 import Image from 'next/image';
-import { LogoDiv } from '../Header/HeaderStyles';
-import {Navbar} from "../Header/data/data";
+import { Navbar } from "../Header/data/data";
 
 
 
 export default function Sidebar(props) {
     let localLanguage = props.language;
-    
+
+    const changeTheme = () => {
+        props.toggleTheme();
+    }
     let textLanguage = localLanguage === "fr" ? Navbar.fr.map(element =>
         <li key={element}>
             <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
@@ -44,32 +45,38 @@ export default function Sidebar(props) {
     // On va charger dynamiquement le code de la sidebar en fonction de la variable isMobile (évite d'ajouter du code html pour rien).
     return (
         <>
-            {props.isMobile ?
-                <SidebarContainer isOpen={props.isOpen} onClick={props.toggle}>
+            {props.isMobile ? // If it's a mobile size window.
+                <SidebarContainer
+                    isOpen={props.isOpen}
+                    onClick={props.toggle}>
                     <BrandDiv>
-                        <Image src={logo} href="/" alt="Logo du site"/>
+                        <Image src={logo} href="/" alt="Logo du site" />
                     </BrandDiv>
                     <Icon onClick={props.toggle}>
-                        <CloseIcon />
+                        <CloseIcon size="3rem"/>
                     </Icon>
                     <SidebarMenu>
                         {textLanguage}
                     </SidebarMenu>
                     <SidebarSocial>
                         <SidebarIcons>
-                            <AiOutlineGlobal size="2rem" />
+                            <Link href={"/"}
+                                locale={localLanguage === "en-US" ? "fr"
+                                    : "en-US"}>
+                                <AiOutlineGlobal size="3rem" />
+                            </Link>
                         </SidebarIcons>
                         <SidebarIcons>
-                            <FiMoon size="2rem" />
+                            <FiMoon size="3rem" onClick={changeTheme}/>
                         </SidebarIcons>
                         <SidebarIcons href="https://github.com/ECecillo">
-                            <AiFillGithub size="2rem" />
+                            <AiFillGithub size="3rem" />
                         </SidebarIcons>
                         <SidebarIcons href="https://twitter.com/EnzoCECILLON1">
-                            <AiFillTwitterCircle size="2rem" />
+                            <AiFillTwitterCircle size="3rem" />
                         </SidebarIcons>
                         <SidebarIcons href="https://www.linkedin.com/in/enzo-cecillon-27142a145/">
-                            <AiFillLinkedin size="2rem" />
+                            <AiFillLinkedin size="3rem" />
                         </SidebarIcons>
                     </SidebarSocial>
                 </SidebarContainer>

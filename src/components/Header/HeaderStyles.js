@@ -52,13 +52,13 @@ export const LogoDiv = styled.div`
     flex-direction: row;
     align-content: center;
     justify-self: center;
-    width: 25%;
+    width: 35%;
     cursor: pointer;
     @media ${(props) => props.theme.breakpoints.sm} {
       grid-area: 1 / 1 / 2 / 4;
       margin: auto;
       align-items: center;
-      width: 20%;
+      width: 25%;
     }
 `;
 
@@ -98,9 +98,10 @@ export const MobileIcon = styled.div`
         right: 0;
         justify-self: center;
         margin: auto;
-        transform: translate(-100%, 50%);
-        font-size: 2rem;
+        transform: translate(-100%, 75%);
+        font-size: 3rem;
         cursor: pointer;
+        size: 2rem;
     }
 `;
 
