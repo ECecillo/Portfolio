@@ -18,7 +18,9 @@ export const Card = styled.div`
     inset rgba(255, 255, 255, 0.5) 0 0 0 6px; // Ligne du Contour
   transition: 1s ${returnEasing};
   @media ${(props) => props.theme.breakpoints.sm} {
-
+    width: 240px;
+    height: 320px;
+    margin: 1rem;
   }
 `;
 export const CardBackground = styled.div`
