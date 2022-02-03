@@ -39,9 +39,11 @@ export default function Header(props) {
 
     let textLanguage = Navbar_Content.map((element) =>
         <li key={element}>
-            <Link href={element === "Accueil" || element === "Home" ? "/" : "#" + element}>
+            <Link href={element === "Accueil" || element === "Home" 
+            ? "/" 
+            : "#" + element}>
                 <NavLink>{element}</NavLink>
-            </Link>
+            </Link> 
         </li>
     );
 

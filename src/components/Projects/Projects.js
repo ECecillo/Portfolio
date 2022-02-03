@@ -3,13 +3,14 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import ProjectCards from './Card/Card';
 
 
-export default function Projects() {
-
+export default function Projects(props) {
+  let localLanguage = props.language;
+  const Title = localLanguage === "fr" ? "Projets" : "Projects";
   return (
     <>
-      <Section nopadding id="projects">
+      <Section nopadding id={Title}>
         <SectionDivider />
-        <SectionTitle main>Projects</SectionTitle>
+        <SectionTitle main>{Title}</SectionTitle>
         <ProjectCards />
       </Section>
     </>
