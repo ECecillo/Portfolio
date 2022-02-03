@@ -8,7 +8,7 @@ export default function Bio(props) {
     const lang = props.language;
     // Get the good translation for the text and return the object that match the language.
     const info_object = lang === "fr" ? Personnal_Info.fr : Personnal_Info.en;
-
+    console.log(info_object);
     // Array that will store the elements that we will render.
     let info = [];
 

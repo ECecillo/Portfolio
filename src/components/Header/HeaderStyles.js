@@ -103,9 +103,8 @@ export const MobileIcon = styled.div`
         justify-self: center;
         margin: auto;
         transform: translate(-100%, 100%);
-        font-size: 2.5rem;
+        font-size: 2rem;
         cursor: pointer;
-        size: 2rem;
     }
 `;
 
