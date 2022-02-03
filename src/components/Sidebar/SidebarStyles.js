@@ -43,7 +43,7 @@ export const BrandDiv = styled.div`
     flex-direction: column;
     align-content: center;
     justify-self: center;
-    width: 30%;
+    width: 25%;
 `;
 
 export const SidebarMenu = styled.div`
@@ -61,8 +61,8 @@ export const SidebarLink = styled.a`
     display: grid;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    margin: 3rem;
+    font-size: 2rem;
+    margin: 2.5rem;
     list-style: none;
     transition: 0.2s ease-in-out;
     color: ${props => props.theme.colors.color};

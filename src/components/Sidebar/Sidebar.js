@@ -56,7 +56,7 @@ export default function Sidebar(props) {
                         <Image src={logo} href="/" alt="Logo du site" />
                     </BrandDiv>
                     <Icon onClick={props.toggle}>
-                        <CloseIcon size="3rem"/>
+                        <CloseIcon size="2rem"/>
                     </Icon>
                     <SidebarMenu>
                         {textLanguage}

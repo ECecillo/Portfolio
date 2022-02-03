@@ -50,14 +50,13 @@ export const RightSection = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, .01fr);
   grid-row-gap: 3rem;
-  margin: 4rem 0;
 
   @media ${props => props.theme.breakpoints.sm} {
     grid-area: 3 / 1 / 3 / 1;
     grid-template-columns: repeat(3, .01fr);
     grid-template-rows: repeat(3, .01fr);
     grid-row-gap: 0;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem 0;
     height: fit-content;
   }
 `;

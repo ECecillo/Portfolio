@@ -1,10 +1,23 @@
 import React from 'react';
 import { Section, SectionTitle } from '../../styles/GlobalComponentsStyles/globalC';
-import { BioLayout, LeftSection, MiddleSection, RightSection, FrameworkIcons, FrameworkDiv } from './PresentationStyles';
+import {
+    BioLayout,
+    LeftSection,
+    MiddleSection,
+    RightSection,
+    FrameworkIcons
+} from './PresentationStyles';
 import { Personnal_Info } from '../../constants/constants';
 import Profile from "../../../public/images/Photo.png";
 import Bio from './Bio/Bio';
-import { SiCplusplus, SiCss3, SiFigma, SiJavascript, SiMysql, SiReact } from "react-icons/si";
+import {
+    SiCplusplus,
+    SiCss3,
+    SiFigma,
+    SiJavascript,
+    SiMysql,
+    SiReact
+} from "react-icons/si";
 import Image from 'next/image';
 
 export default function Presentation(props) {
@@ -16,13 +29,13 @@ export default function Presentation(props) {
     return (
         <>
             <Section row nopadding>
-                <SectionTitle main center>
+                <SectionTitle style={{ marginBottom: '3rem' }} main center>
                     {jobTitle}
                 </SectionTitle>
             </Section>
             <BioLayout id={BioID}>
                 <LeftSection>
-                    <Bio />
+                    <Bio language={localLanguage} />
                 </LeftSection>
                 <MiddleSection>
                     <Image src={Profile} href="https://www.linkedin.com/in/enzo-cecillon-27142a145/" />
