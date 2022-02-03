@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import {
     CardWrapper,
     Card,
     CardBackground,
     CardInfo,
-    Content,
     Header
 } from './CardStyles';
 
@@ -18,10 +17,12 @@ import { GridContainer } from '../ProjectsStyles'; //
 // Big thanks : https://armandocanals.com/posts/CSS-transform-rotating-a-3D-object-perspective-based-on-mouse-position.html
 
 
-export default function ProjectCards() {
+export default function ProjectCards(props) {
+
+    // Prend en paramètre les éléments du tableau de tag dans constant et va retourner true or false si le filtre est dans le tableau tag du projet.
+    const applyFilter = (tag) => tag === props.filter;
 
     // La logique c'est de récupérer les dimensions de la div que l'on pointe, on effectue des calculs pour la rotation ... et on les appliques aux styles des divs.
-
     const [cardPosition, setCardPosition] = useState([0, 0, 0, 0]);
     //(x,y,width, height)
 
@@ -77,46 +78,48 @@ export default function ProjectCards() {
     return (
         <GridContainer>
             {projects.map((item) => (
-                <CardWrapper key={item.title}
-                    onMouseMove={(event) => {
-                        // Position of the card inside window.
-                        setCardPosition([
-                            event.target.getBoundingClientRect().x, event.target.getBoundingClientRect().y,
-                            event.target.getBoundingClientRect().width,
-                            event.target.getBoundingClientRect().height]);
+                props.filter === 'All' || item.tags.some(applyFilter)
+                    ?
+                    <CardWrapper key={item.title}
+                        onMouseMove={(event) => {
+                            // Position of the card inside window.
+                            setCardPosition([
+                                event.target.getBoundingClientRect().x, event.target.getBoundingClientRect().y,
+                                event.target.getBoundingClientRect().width,
+                                event.target.getBoundingClientRect().height]);
 
-                        // Set the position of the mouse inside the window.
-                        setPagePosition([event.clientX, event.clientY]);
+                            // Set the position of the mouse inside the window.
+                            setPagePosition([event.clientX, event.clientY]);
 
-                        // Compute and render the style.
-                        setStyle(usePerspective());
+                            // Compute and render the style.
+                            setStyle(usePerspective());
 
-                    }}
-                    onMouseEnter={() => {
-                        clearTimeout(mouseLeaveDelay);
-                    }}
-                    onMouseLeave={() => {
-                        setTimeout(() => {
-                            // Reset the rotation when we leave a card. 
-                            setRotation([0, 0]);
-                        }, 200);
-                    }}  >
-                    <Card style={{ transform: styles.frame }
-                    }>
+                        }}
+                        onMouseEnter={() => {
+                            clearTimeout(mouseLeaveDelay);
+                        }}
+                        onMouseLeave={() => {
+                            setTimeout(() => {
+                                // Reset the rotation when we leave a card. 
+                                setRotation([0, 0]);
+                                setTranslation([0, 0]);
+                            }, 200);
+                        }}  >
+                        <Card style={{ transform: styles.frame }}>
+                            <CardBackground
+                                style={{
+                                    backgroundImage: `url("${item.image}")`,
+                                    transform: styles.background
+                                }}
+                            />
+                            <CardInfo>
+                                <Header>{item.title}</Header>
+                                <p>{item.description}</p>
+                            </CardInfo>
 
-                        <CardBackground
-                            style={{
-                                backgroundImage: `url("${item.image}")`,
-                                transform: styles.background
-                            }}
-                        />
-                        <CardInfo>
-                            <Header>{item.title}</Header>
-                            <p>{item.description}</p>
-                        </CardInfo>
-
-                    </Card>
-                </CardWrapper>
+                        </Card>
+                    </CardWrapper>
+                    : ''
             ))}
         </GridContainer>
     );
