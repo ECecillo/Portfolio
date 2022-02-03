@@ -19,10 +19,10 @@ row-gap: 3rem;
 export const TitleButtonSection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 0.5fr));
-  grid-templates-rows: 0.5fr;
+  grid-template-rows: 0.5fr;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  //margin: 3rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: 1.5rem;
   }
