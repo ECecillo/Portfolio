@@ -1,6 +1,7 @@
 import React from 'react';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponentsStyles/globalC';
+import {Section, SectionDivider } from '../../styles/GlobalComponentsStyles/globalC';
 import ProjectCards from './Card/Card';
+import { AllButton, SectionTitleP, ProjectTitle } from './ProjectsStyles';
 
 
 export default function Projects(props) {
@@ -10,8 +11,11 @@ export default function Projects(props) {
     <>
       <Section nopadding id={Title}>
         <SectionDivider />
-        <SectionTitle main>{Title}</SectionTitle>
-        <ProjectCards language={props.language} filter={props.filter}/>
+        <SectionTitleP nopadding>
+          <ProjectTitle>{Title}</ProjectTitle>
+          <AllButton onClick={() => props.filtering('All')}>All</AllButton>
+        </SectionTitleP>
+        <ProjectCards language={props.language} filter={props.filter} />
       </Section>
     </>
   );
