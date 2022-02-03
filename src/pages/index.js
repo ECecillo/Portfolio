@@ -26,7 +26,7 @@ const Home = (props) => {
       {showSpecial}
       <FadeSection>
         <Presentation language={lang} filtering={changeFilter}/>
-        <Projects language={lang} filter={filter}/>
+        <Projects language={lang} filter={filter} filtering={changeFilter}/>
       </FadeSection>
     </Layout>
   );

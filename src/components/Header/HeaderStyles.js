@@ -58,11 +58,7 @@ export const LogoDiv = styled.div`
       grid-area: 1 / 1 / 2 / 4;
       margin: auto;
       align-items: center;
-<<<<<<< HEAD
       width: 30%;
-=======
-      width: 25%;
->>>>>>> f24cdff47e5acb0dc38b55fea67c37335ae73eb1
     }
 `;
 
