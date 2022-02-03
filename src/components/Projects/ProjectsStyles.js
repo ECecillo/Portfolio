@@ -16,7 +16,7 @@ row-gap: 3rem;
 `;
 
 
-export const SectionTitleP = styled.div`
+export const TitleButtonSection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 0.5fr));
   grid-templates-rows: 0.5fr;
