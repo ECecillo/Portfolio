@@ -22,12 +22,16 @@ import Image from 'next/image';
 
 export default function Presentation(props) {
     let localLanguage = props.language;
+    const setFilter = (Framework) => {
+        props.filtering(Framework);
+    }
+
     let jobTitle = localLanguage === "fr" ?
         Personnal_Info.fr.Poste :
         Personnal_Info.en.Job;
     const BioID = localLanguage === "fr" ? "Moi" : "Me";
     return (
-        <>
+        <div>
             <Section row nopadding>
                 <SectionTitle style={{ marginBottom: '3rem' }} main center>
                     {jobTitle}
@@ -41,26 +45,26 @@ export default function Presentation(props) {
                     <Image src={Profile} href="https://www.linkedin.com/in/enzo-cecillon-27142a145/" />
                 </MiddleSection>
                 <RightSection>
-                    <FrameworkIcons>
-                        <SiReact size="4rem" />
+                    <FrameworkIcons onClick={() => {setFilter('React')}}>
+                        <SiReact size="4rem"  />
                     </FrameworkIcons>
-                    <FrameworkIcons>
+                    <FrameworkIcons onClick={() => {setFilter('C++')}}>
                         <SiCplusplus size="4rem" />
                     </FrameworkIcons>
                     <FrameworkIcons>
-                        <SiFigma size="4rem" />
+                        <SiFigma size="4rem"/>
                     </FrameworkIcons>
-                    <FrameworkIcons>
-                        <SiJavascript size="4rem" />
+                    <FrameworkIcons onClick={() => {setFilter('JS')}}>
+                        <SiJavascript size="4rem"  />
                     </FrameworkIcons>
-                    <FrameworkIcons>
-                        <SiCss3 size="4rem" />
+                    <FrameworkIcons onClick={() => {setFilter('CSS')}}>
+                        <SiCss3 size="4rem"  />
                     </FrameworkIcons>
-                    <FrameworkIcons>
+                    <FrameworkIcons onClick={() => {setFilter('SQL')}}>
                         <SiMysql size="4rem" />
                     </FrameworkIcons>
                 </RightSection>
             </BioLayout>
-        </>
+        </div>
     )
 }

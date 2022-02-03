@@ -11,7 +11,7 @@ export default function Projects(props) {
       <Section nopadding id={Title}>
         <SectionDivider />
         <SectionTitle main>{Title}</SectionTitle>
-        <ProjectCards />
+        <ProjectCards language={props.language} filter={props.filter}/>
       </Section>
     </>
   );
