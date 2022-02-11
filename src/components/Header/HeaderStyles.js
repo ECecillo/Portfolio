@@ -57,10 +57,10 @@ export const LogoDiv = styled.div`
   justify-self: center;
   width: 35%;
   cursor: pointer;
-  @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
+  @media ${(props) => props.theme.breakpoints.lg} {
     width: 50%;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.sm} and (orientation: portrait) {
     grid-area: 1 / 1 / 2 / 4;
     margin: auto;
     align-items: center;
@@ -103,7 +103,7 @@ export const SocialIcons = styled.a`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: block;
     position: absolute;
     right: 0;
