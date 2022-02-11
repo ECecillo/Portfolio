@@ -19,6 +19,10 @@
     "Mobile Landscape": [
       812,
       375
+    ],
+    "Tablet Portrait": [
+      800,
+      1080
     ]
   }
 }
