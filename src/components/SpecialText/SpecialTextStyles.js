@@ -19,7 +19,6 @@ export const Container = styled.div`
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
 
-    margin: 0;
     margin: 3rem 0;
     padding: 0;
     font-size: 1rem;
@@ -29,6 +28,7 @@ export const Container = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.lg} {
     // For Landscape Mobile
+    margin: 0.5rem 0;
     font-size: 3rem;
   }
 `;
