@@ -57,6 +57,7 @@ export const BrandDiv = styled.div`
   flex-direction: column;
   align-content: center;
   justify-self: center;
+  margin: 1rem 0;
   width: 25%;
   @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
     grid-area: 1 / 1 / 1 / 4;
