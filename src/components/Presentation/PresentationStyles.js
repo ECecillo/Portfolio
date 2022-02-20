@@ -70,6 +70,7 @@ export const FrameworkIcons = styled.a`
   justify-self: center;
   align-self: center;
   margin: 1rem;
+  cursor: pointer;
 
   &:hover {
     animation: ${heartBeat} 1.1s ease-in-out infinite both;

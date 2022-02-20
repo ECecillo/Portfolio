@@ -9,7 +9,7 @@ import {
 } from './PresentationStyles';
 import { Personnal_Info } from '../../constants/constants';
 import Profile from "../../../public/images/Photo.png";
-import Bio from './Bio/Bio';
+import Bio from '../Bio/Bio';
 import {
     SiCplusplus,
     SiCss3,
@@ -45,22 +45,22 @@ export default function Presentation(props) {
                     <Image src={Profile} href="https://www.linkedin.com/in/enzo-cecillon-27142a145/" />
                 </MiddleSection>
                 <RightSection>
-                    <FrameworkIcons onClick={() => {setFilter('React')}}>
-                        <SiReact size="4rem"  />
+                    <FrameworkIcons onClick={() => { setFilter('React') }}>
+                        <SiReact size="4rem" />
                     </FrameworkIcons>
-                    <FrameworkIcons onClick={() => {setFilter('C++')}}>
+                    <FrameworkIcons onClick={() => { setFilter('C++') }}>
                         <SiCplusplus size="4rem" />
                     </FrameworkIcons>
                     <FrameworkIcons>
-                        <SiFigma size="4rem"/>
+                        <SiFigma size="4rem" />
                     </FrameworkIcons>
-                    <FrameworkIcons onClick={() => {setFilter('JS')}}>
-                        <SiJavascript size="4rem"  />
+                    <FrameworkIcons onClick={() => { setFilter('JS') }}>
+                        <SiJavascript size="4rem" />
                     </FrameworkIcons>
-                    <FrameworkIcons onClick={() => {setFilter('CSS')}}>
-                        <SiCss3 size="4rem"  />
+                    <FrameworkIcons onClick={() => { setFilter('CSS') }}>
+                        <SiCss3 size="4rem" />
                     </FrameworkIcons>
-                    <FrameworkIcons onClick={() => {setFilter('SQL')}}>
+                    <FrameworkIcons onClick={() => { setFilter('SQL') }}>
                         <SiMysql size="4rem" />
                     </FrameworkIcons>
                 </RightSection>

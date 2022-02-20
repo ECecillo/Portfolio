@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { FiMoon } from "react-icons/fi";
 import {
+  BrandClose,
   BrandDiv,
   CloseIcon,
   Icon,
@@ -35,42 +36,44 @@ export default function Sidebar(props) {
   let textLanguage =
     localLanguage === "fr"
       ? Navbar.fr.map((element) => (
-          <li key={element}>
-            <Link
-              href={
-                element === "Accueil" || element === "Home"
-                  ? "/"
-                  : "#" + element
-              }
-            >
-              <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
-            </Link>
-          </li>
-        ))
+        <li key={element}>
+          <Link
+            href={
+              element === "Accueil" || element === "Home"
+                ? "/"
+                : "#" + element
+            }
+          >
+            <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
+          </Link>
+        </li>
+      ))
       : Navbar.en.map((element) => (
-          <li key={element}>
-            <Link
-              href={
-                element === "Accueil" || element === "Home"
-                  ? "/"
-                  : "#" + element
-              }
-            >
-              <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
-            </Link>
-          </li>
-        ));
+        <li key={element}>
+          <Link
+            href={
+              element === "Accueil" || element === "Home"
+                ? "/"
+                : "#" + element
+            }
+          >
+            <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
+          </Link>
+        </li>
+      ));
   // On va charger dynamiquement le code de la sidebar en fonction de la variable isMobile (évite d'ajouter du code html pour rien).
   return (
     <>
       {props.isMobile ? (
         <SidebarContainer isOpen={props.isOpen} onClick={props.toggle}>
-          <BrandDiv style={{ filter: applyFilter }}>
-            <Image src={logo} href="/" alt="Logo du site" />
-          </BrandDiv>
-          <Icon onClick={props.toggle}>
-            <CloseIcon />
-          </Icon>
+          <BrandClose>
+            <BrandDiv style={{ filter: applyFilter }}>
+              <Image src={logo} href="/" alt="Logo du site" />
+            </BrandDiv>
+            <Icon onClick={props.toggle}>
+              <CloseIcon />
+            </Icon>
+          </BrandClose>
           <SidebarMenu>{textLanguage}</SidebarMenu>
           <SidebarSocial>
             <SidebarIcons>
