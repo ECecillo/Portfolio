@@ -60,14 +60,14 @@ export default function Header(props) {
                     {textLanguage}
                 </LinkDiv>
                 <SocialDiv>
-                    <SocialIcons>
+                    <SocialIcons style={{cursor: "pointer"}}>
                         <Link href={"/"}
                             locale={localLanguage === "en-US" ? "fr"
                                 : "en-US"}>
                             <AiOutlineGlobal size="2rem" />
                         </Link>
                     </SocialIcons>
-                    <SocialIcons>
+                    <SocialIcons style={{cursor: "pointer"}}>
                         <FiMoon size="2rem" onClick={changeTheme} />
                     </SocialIcons>
                     <SocialIcons href="https://github.com/ECecillo">

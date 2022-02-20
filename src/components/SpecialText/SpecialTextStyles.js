@@ -8,7 +8,7 @@ import {
 
 export const Container = styled.div`
   display: grid;
-  font-size: 5rem;
+  font-size: 4rem;
   grid-template-columns: 1fr;
   padding: 1rem;
   margin-top: 4rem;
@@ -27,7 +27,6 @@ export const Container = styled.div`
     font-size: 2rem;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    // For Landscape Mobile
     margin: 0.5rem 0;
     font-size: 3rem;
   }

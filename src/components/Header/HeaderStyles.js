@@ -5,7 +5,6 @@ export const Container = styled.div`
   grid-template-columns: repeat(3, 1fr);
   color: ${(props) => props.theme.colors.color};
   grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
 
@@ -55,10 +54,13 @@ export const LogoDiv = styled.div`
   flex-direction: row;
   align-content: center;
   justify-self: center;
-  width: 35%;
+  width: 40%;
   cursor: pointer;
   @media ${(props) => props.theme.breakpoints.lg} {
-    width: 50%;
+    width: 70%;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
+    width: 60%;
   }
   @media ${(props) => props.theme.breakpoints.sm} and (orientation: portrait) {
     grid-area: 1 / 1 / 2 / 4;
@@ -119,14 +121,8 @@ export const MobileIcon = styled.div`
     right: 0;
     justify-self: center;
     margin: auto;
-    transform: translate(-100%, 100%);
+    transform: translate(-50%, 100%);
     font-size: 2rem;
     cursor: pointer;
-  }
-`;
-
-export const Menu = styled.div`
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: none;
   }
 `;

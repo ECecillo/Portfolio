@@ -1,4 +1,8 @@
 module.exports = {
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  },
   reactStrictMode: true,
   i18n: {
     // These are all the locales you want to support in

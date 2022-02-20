@@ -19,7 +19,6 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0"} ;
-
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -55,6 +54,10 @@ export const SectionTitle = styled.h2`
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
     max-width: 100%;
   }
+  @media ${props => props.theme.breakpoints.lg} and (orientation: landscape){
+    padding: 0 0 1rem 0;
+  }
+
 `
 
 export const SectionText = styled.p`
