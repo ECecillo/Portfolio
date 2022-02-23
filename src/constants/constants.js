@@ -3,7 +3,7 @@ export const projects = [
     title: 'Gestionnaire de QCM API',
     description: "Gestion des réponses/requêtes vers une API avec JS, affichages, créations, modifications des données à partir de la page.",
     image: '/images/1.png',
-    tags: ['JS, HTML, CSS'],
+    tags: ['JS', 'HTML', 'CSS'],
     source: 'https://github.com/ECecillo/Questionnary_API',
     id: 0,
   },
@@ -68,6 +68,15 @@ export const projects = [
     source: 'https://github.com/ECecillo/Red_Black_Tree',
     visit: '',
     id: 7,
+  },
+  {
+    title: 'Blog Prisma',
+    description: "Blog basique fait avec NextJS et Prisma en ORM.",
+    image: '/images/9.png',
+    tags: ['JS', 'NEXT', 'CSS'],
+    source: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
+    visit: '',
+    id: 0,
   }
 ];
 

@@ -93,9 +93,10 @@ export const SidebarLink = styled.a`
   display: grid;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   list-style: none;
   transition: 0.2s ease-in-out;
+  margin : 1rem 0;
   color: ${(props) => props.theme.colors.color};
 
   &:hover {

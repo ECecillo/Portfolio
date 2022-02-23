@@ -1,7 +1,7 @@
 import React from 'react';
-import {Section, SectionDivider } from '../../styles/GlobalComponentsStyles/globalC';
+import { SectionDivider } from '../../styles/GlobalComponentsStyles/globalC';
 import ProjectCards from './Card/Card';
-import { AllButton, TitleButtonSection, ProjectTitle } from './ProjectsStyles';
+import { AllButton, TitleButtonSection, ProjectTitle, ProjectSection } from './ProjectsStyles';
 
 
 export default function Projects(props) {
@@ -9,14 +9,20 @@ export default function Projects(props) {
   const Title = localLanguage === "fr" ? "Projets" : "Projects";
   return (
     <>
-      <Section nopadding id={Title}>
+      <ProjectSection nopadding id={Title}>
         <SectionDivider />
         <TitleButtonSection nopadding>
           <ProjectTitle>{Title}</ProjectTitle>
-          <AllButton onClick={() => props.filtering('All')}>All</AllButton>
+          <div style={{
+            gridColumn: "2 / 3",
+            alignSelf: "center",
+            justifySelf: "center"
+          }}>
+            <AllButton onClick={() => props.filtering('All')}>All</AllButton>
+          </div>
         </TitleButtonSection>
         <ProjectCards language={props.language} filter={props.filter} />
-      </Section>
+      </ProjectSection>
     </>
   );
 }
