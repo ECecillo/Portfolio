@@ -5,7 +5,7 @@ export const BioLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.md} {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.2fr;
   }
@@ -18,14 +18,15 @@ export const LeftSection = styled.div`
     display: flex;
     grid-area: 2 / 1 / 2 / 1;
     flex-direction: column;
-
+    
     margin: 0 auto;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 80%;
     display: flex;
+    grid-area: 2 / 1 / 2 / 1;
     flex-direction: column;
-
+    text-align: center;
     margin: 0 auto;
   }
 `;
@@ -42,6 +43,14 @@ export const MiddleSection = styled.div`
     height: 100%;
     margin: auto;
   }
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+  }
 `;
 export const RightSection = styled.div`
   grid-area: 1 / 3 / 1 / 4;
@@ -51,7 +60,7 @@ export const RightSection = styled.div`
   grid-template-rows: repeat(5, 0.01fr);
   grid-row-gap: 3rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.md} {
     grid-area: 3 / 1 / 3 / 1;
     grid-template-columns: repeat(3, 0.01fr);
     grid-template-rows: repeat(3, 0.01fr);

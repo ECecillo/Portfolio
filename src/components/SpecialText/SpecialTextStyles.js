@@ -8,12 +8,12 @@ import {
 
 export const Container = styled.div`
   display: grid;
-  font-size: 4rem;
+  font-size: 3rem;
   grid-template-columns: 1fr;
   padding: 1rem;
   margin-top: 4rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.sm} and (orientation: portrait){
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 0.5rem;
@@ -26,9 +26,9 @@ export const Container = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 2rem;
   }
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media ${(props) => props.theme.breakpoints.lg} and (orientation: portrait) {
     margin: 0.5rem 0;
-    font-size: 3rem;
+    font-size: x-large;
   }
 `;
 
@@ -57,8 +57,5 @@ export const Head1 = styled.h1`
     background: ${(props) => props.theme.colors.color};
     animation: ${typewriter} ${typeSpeed} steps(13) 1s forwards,
       ${blink} ${blinkSpeed} steps(15) infinite;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 3rem;
   }
 `;
