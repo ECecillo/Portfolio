@@ -81,20 +81,20 @@ export default function Sidebar(props) {
                 href={"/"}
                 locale={localLanguage === "en-US" ? "fr" : "en-US"}
               >
-                <AiOutlineGlobal size="3rem" />
+                <AiOutlineGlobal size="2rem" />
               </Link>
             </SidebarIcons>
             <SidebarIcons>
-              <FiMoon size="3rem" onClick={changeTheme} />
+              <FiMoon size="2rem" onClick={changeTheme} />
             </SidebarIcons>
             <SidebarIcons href="https://github.com/ECecillo">
-              <AiFillGithub size="3rem" />
+              <AiFillGithub size="2rem" />
             </SidebarIcons>
             <SidebarIcons href="https://twitter.com/EnzoCECILLON1">
-              <AiFillTwitterCircle size="3rem" />
+              <AiFillTwitterCircle size="2rem" />
             </SidebarIcons>
             <SidebarIcons href="https://www.linkedin.com/in/enzo-cecillon-27142a145/">
-              <AiFillLinkedin size="3rem" />
+              <AiFillLinkedin size="2rem" />
             </SidebarIcons>
           </SidebarSocial>
         </SidebarContainer>

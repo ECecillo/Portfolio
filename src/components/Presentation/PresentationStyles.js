@@ -69,7 +69,7 @@ export const FrameworkIcons = styled.a`
   color: ${(props) => props.theme.colors.color};
   justify-self: center;
   align-self: center;
-  margin: 1rem;
+  margin: 0.5rem;
   cursor: pointer;
 
   &:hover {
