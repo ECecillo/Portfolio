@@ -23,10 +23,6 @@ export const TitleButtonSection = styled.div`
   grid-template-rows: 0.5fr 0.5fr;
   justify-content: center;
   align-items: center;
-  //margin: 3rem;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-bottom: 1.5rem;
-  }
 `;
 export const ProjectTitle = styled(SectionTitle)`
   grid-column: 2 / 3;
@@ -34,6 +30,7 @@ export const ProjectTitle = styled(SectionTitle)`
   margin: 0 0 1rem 0;
   justify-self: center;
   align-self: center;
+  margin: 1rem 0;
 `;
 
 export const AllButton = styled(ButtonFront)`
@@ -41,7 +38,7 @@ export const AllButton = styled(ButtonFront)`
   grid-row: 2 / 3;
   position: relative;
   width: 100%;
-  padding: .5rem;
+  padding: 1rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1.5rem;
