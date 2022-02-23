@@ -96,7 +96,10 @@ export const Personnal_Info =
   },
   en: {
     Job: "Front-End Developer",
-    Description: "Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. Today, I code in C++,  React/Nextjs and Javascript, projects with a team or at Home, which I post on Github. Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃",
+    Description: `
+    Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. 
+    Today, I code in C++,  React/Nextjs and Javascript, projects with a team or at Home, which I post on Github.
+    Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃`,
     Contact: {
       adress: "41 Vieille Route",
       city: "Chaponost",
