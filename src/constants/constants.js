@@ -11,6 +11,7 @@ export const projects = [
     image: '/images/1.png',
     tags: ['JS', 'HTML', 'CSS'],
     source: 'https://github.com/ECecillo/Questionnary_API',
+    visit:'',
     id: 0,
   },
   {
@@ -25,6 +26,7 @@ export const projects = [
     image: '/images/2.png',
     tags: ['React', 'NextJS', 'Styled Component', 'JS', 'CSS', 'Figma'],
     source: 'https://github.com/ECecillo/Portfolio',
+    visit:'',
     id: 1,
   },
   {
@@ -123,7 +125,7 @@ export const projects = [
       description: "Blog basique fait avec NextJS et Prisma en ORM.",
     },
     en : {
-      title: "Prisma Blog Poster",
+      title: 'Prisma Blog',
       description: "Basic Blog using NextJS and Prisma."
     },
     image: '/images/9.png',

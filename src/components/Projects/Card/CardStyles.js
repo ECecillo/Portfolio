@@ -15,7 +15,7 @@ export const Card = styled.div`
   box-shadow:
     rgba(0,0,0, 0.66) 0 20px 40px 0, // Ombre arrière plan
     inset #333 0 0 0 5px, // Assombris la carte.
-    inset rgba(255, 255, 255, 0.5) 0 0 0 6px; // Ligne du Contour
+    inset rgba(255, 255, 255, 0.8) 0 0 0 6px; // Ligne du Contour
   transition: 1s ${returnEasing};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 240px;
@@ -78,12 +78,29 @@ font-size: 2rem;
   text-shadow: rgba(0,0,0, 0.5) 0 10px 10px;
 `;
 
+export const IconContainer = styled.div`
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+    transform: translateZ(50px);
+    z-index: 1000;
+  a {
+    opacity: 0;
+    margin: 0 1rem 0 0;
+    transition: 0.7s ${hoverEasing};
+  }
+`;
+
 export const CardWrapper = styled.div`
 transform: perspective(800px);
 transform-style: preserve-3d;
 cursor: pointer;
 
 &:hover {
+  a {
+    transition: 2s ${hoverEasing};
+    opacity: 1;
+  }
   ${CardInfo} {
     transform: translateY(0);
   }
@@ -115,6 +132,4 @@ cursor: pointer;
       inset white 0 0 0 6px; 
   }
 }
-`;
-export const Content = styled.p`
 `;
