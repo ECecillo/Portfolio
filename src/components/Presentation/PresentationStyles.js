@@ -57,7 +57,6 @@ export const RightSection = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 0.01fr);
-  grid-row-gap: 3rem;
 
   @media ${(props) => props.theme.breakpoints.xl} {
     grid-area: 3 / 1 / 3 / 1;
