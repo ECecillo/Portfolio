@@ -3,13 +3,14 @@ const breakpoints = {
     sm: 'screen and (max-width: 640px)',
     md: 'screen and (max-width: 900px)',
     lg: 'screen and (max-width: 1024px)',
-    xl: 'screen and (max-width: 1280px)'
+    xl: 'screen and (max-width: 1280px)',
 };
 const fonts = {
     title: "Space Grotesk, sans-serif",
     main: "Space Grotesk, sans-serif",
-    special: "Source Code Pro, monospace",
-    test1: "Montserrat"
+    special: "Lato",
+    project: "Source Code Pro, monospace",
+    presentation: "Oxygen",
 };
 const lightTheme = {
     fonts: fonts,

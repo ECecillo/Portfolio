@@ -8,6 +8,7 @@ export const Section = styled.div`
     grid-template-rows: .1fr 1fr .1fr;
     margin: 0;
     grid-row-gap: 2rem;
+    font-size: 1rem;
 `;
 
 export const SectionContent = styled.div`
@@ -50,5 +51,7 @@ export const ContentTitle = styled.h3`
 
 export const PContent = styled(SectionText)`
     grid-area: 2 / 1 / 3 / 1;
+    padding: 0;
+    font-size: 1.2rem;
 `;
 

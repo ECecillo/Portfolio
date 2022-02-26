@@ -3,25 +3,21 @@ import { heartBeat, wobbleBottom } from "../../styles/animation";
 
 export const BioLayout = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.xl} {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.2fr;
+    
   }
 `;
 
 export const LeftSection = styled.div`
   grid-area: 1 / 1 / 1 / 2;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
-    display: flex;
-    grid-area: 2 / 1 / 2 / 1;
-    flex-direction: column;
-    
-    margin: 0 auto;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-family: ${props => props.theme.fonts.presentation};
+  @media ${(props) => props.theme.breakpoints.xl} {
     width: 80%;
     display: flex;
     grid-area: 2 / 1 / 2 / 1;
@@ -31,10 +27,20 @@ export const LeftSection = styled.div`
   }
 `;
 export const MiddleSection = styled.div`
-  grid-area: 1 / 1 / 1 / 4;
-  width: 50%;
-  height: 50%;
+  grid-area: 1 / 2 / 1 / 3;
+  width: 100%;
+  height: 100%;
   justify-self: center;
+  align-self: center;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 65%;
+    height: 100%;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 1 / 1;
     justify-self: center;
@@ -43,33 +49,29 @@ export const MiddleSection = styled.div`
     height: 100%;
     margin: auto;
   }
-  @media ${(props) => props.theme.breakpoints.md} {
-    grid-area: 1 / 1 / 1 / 1;
-    justify-self: center;
-    align-self: center;
-    margin: 0 auto;
-    width: 75%;
-    height: 100%;
-  }
+  
 `;
 export const RightSection = styled.div`
   grid-area: 1 / 3 / 1 / 4;
-
+  justify-self: end;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 0.01fr);
   grid-row-gap: 3rem;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.xl} {
     grid-area: 3 / 1 / 3 / 1;
-    grid-template-columns: repeat(3, 0.01fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 0.01fr);
-    grid-row-gap: 0;
-    margin: 2rem 0 3rem 0;
+    grid-row-gap: 2rem;
+    margin: 2rem 0 1rem 0;
     height: fit-content;
+    justify-self: center;
+    width: 100%;
   }
   @media ${(props) => props.theme.breakpoints.sm} and (orientation: landscape) {
     width: 80%;
+    justify-self: center;
   }
 `;
 

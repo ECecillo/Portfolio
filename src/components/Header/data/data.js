@@ -1,4 +1,4 @@
 export const Navbar = {
-    "fr": ["Accueil", "Moi", "Projets"],
-    "en": ["Home", "Me", "Projects"]
+    "fr": ["Portrait", "Projets"],
+    "en": [ "Portrait", "Projects"]
 };

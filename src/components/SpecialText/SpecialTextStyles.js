@@ -8,7 +8,6 @@ import {
 
 export const Container = styled.div`
   display: grid;
-  font-size: 3rem;
   grid-template-columns: 1fr;
   padding: 1rem;
   margin-top: 4rem;
@@ -21,14 +20,6 @@ export const Container = styled.div`
 
     margin: 3rem 0;
     padding: 0;
-    font-size: 1rem;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 2rem;
-  }
-  @media ${(props) => props.theme.breakpoints.lg} and (orientation: portrait) {
-    margin: 0.5rem 0;
-    font-size: x-large;
   }
 `;
 
@@ -38,6 +29,17 @@ export const Head1 = styled.h1`
   justify-self: center;
   text-align: center;
   border: ${(props) => props.theme.colors.color};
+  font-size: 6rem;
+  
+  @media ${props => props.theme.breakpoints.md} {
+    font-size: 4rem;
+  }
+  @media ${props => props.theme.breakpoints.sm} and (orientation: landscape){
+    font-size: 3rem;
+  }
+  @media ${props => props.theme.breakpoints.sm} and (orientation: portrait) {
+    font-size: 2rem;
+  }
 
   &::before,
   ::after {
