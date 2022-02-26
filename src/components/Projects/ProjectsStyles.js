@@ -12,6 +12,7 @@ export const ProjectSection = styled(Section)`
   grid-template-columns: 1fr;
   row-gap: 1rem;
   grid-template-rows: max-content max-content 1fr;
+  font-family: ${props => props.theme.fonts.project};
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
   }

@@ -11,7 +11,6 @@ export const Container = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
     padding-top: 2rem;
@@ -20,9 +19,11 @@ export const Container = styled.div`
 `;
 
 export const LinkDiv = styled.div`
+  font-family: ${props => props.theme.fonts.main};
   grid-area: 1 / 1 / 1 / 2;
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr / 1fr 1fr;
+  column-gap: 1.5rem;
   justify-items: center;
   align-self: center;
   align-content: center;

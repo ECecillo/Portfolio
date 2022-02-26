@@ -29,7 +29,7 @@ export default function Presentation(props) {
     let jobTitle = localLanguage === "fr" ?
         Personnal_Info.fr.Poste :
         Personnal_Info.en.Job;
-    const BioID = localLanguage === "fr" ? "Moi" : "Me";
+        
     return (
         <div>
             <Section row nopadding>
@@ -37,7 +37,7 @@ export default function Presentation(props) {
                     {jobTitle}
                 </SectionTitle>
             </Section>
-            <BioLayout id={BioID}>
+            <BioLayout id="Portrait">
                 <LeftSection>
                     <Bio language={localLanguage} />
                 </LeftSection>

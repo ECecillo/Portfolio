@@ -85,7 +85,7 @@ export const SidebarMenu = styled.div`
     //grid-template-rows: 1fr min-content;
   }
   @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-area: 2 / 1 / 4 / 4;
   }
 `;

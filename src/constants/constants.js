@@ -47,7 +47,7 @@ export const projects = [
   {
     fr : {
       title: 'PinterestLike',
-      description: "Reprend le principe de Pinterest avec la visualisation d'images stockés sur une Base de Données MySQL. On gère également l'inscription, la connexion d'utilisateurs en PHP.",
+      description: "Reprend le principe de Pinterest en PHP et stock les données Utilisateurs/Images dans une DB MySQL.",
     },
     en : {
       title: "PinterestLike",
@@ -142,13 +142,6 @@ export const Personnal_Info =
   fr: {
     Poste: "Développeur Web Front-End",
     Description: "Passionné par les nouvelles Technologies et la création d'Application depuis mon adolescence. Aujourd'hui, je code en C++, React/Nextjs et Javascript des projets en équipes ou en solo que je poste sur Github. N'hésitez pas à checker mes réseaux pour plus d'info 😉 , à très bientôt 😃.",
-    Contact: {
-      adress: "41 Vieille Route",
-      city: "Chaponost",
-      postal_code: "69630",
-      phone: "+33 6 81 24 51 27",
-      email: "enzo.cecillon@gmail.com"
-    }
   },
   en: {
     Job: "Front-End Developer",
@@ -156,12 +149,12 @@ export const Personnal_Info =
     Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. 
     Today, I code in C++,  React/Nextjs and Javascript, projects with a team or at Home, which I post on Github.
     Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃`,
-    Contact: {
-      adress: "41 Vieille Route",
-      city: "Chaponost",
-      postal_code: "69630",
-      phone: "+33 6 81 24 51 27",
-      email: "enzo.cecillon@gmail.com"
-    }
+  },
+  Contact: {
+    adress: "41 Vieille Route",
+    city: "Chaponost",
+    postal_code: "69630",
+    phone: "+33 6 81 24 51 27",
+    email: "enzo.cecillon@gmail.com"
   }
 };
