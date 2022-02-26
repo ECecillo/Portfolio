@@ -42,7 +42,6 @@ export const NavLink = styled.a`
   transition: 0.4s ease;
   &:hover {
     color: #ab3e16;
-    opacity: 1;
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
