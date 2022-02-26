@@ -77,7 +77,8 @@ export const SidebarMenu = styled.div`
   display: grid;
   grid-area: 2 / 1 / 3 / 1;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 0.66fr);
+  grid-template-rows: repeat(2, 0.66fr);
+  align-items: center;
   height: 100%;
   text-align: center;
 
