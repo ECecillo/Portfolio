@@ -10,7 +10,7 @@ export default function Projects(props) {
   return (
     <>
       <ProjectSection nopadding id={Title}>
-        <SectionDivider />
+        <SectionDivider style={{marginTop: "2rem"}}/>
         <TitleButtonSection nopadding>
           <ProjectTitle>{Title}</ProjectTitle>
           <div style={{
