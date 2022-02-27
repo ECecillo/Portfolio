@@ -8,8 +8,8 @@ function Footer() {
         <FooterDiv>
             <SectionDivider style={{marginBottom: "2rem"}}/>
             <FooterInfo>
-                <Source href="mailto:https://github.com/ECecillo/Portfolio">Source Code of this page</Source>
-                <Mail href='enzo.cecillon@gmail.com'>ENZO.CECILLON@GMAIL.COM</Mail>
+                <Source href="https://github.com/ECecillo/Portfolio">Source Code of this page</Source>
+                <Mail href='mailto:enzo.cecillon@gmail.com'>ENZO.CECILLON@GMAIL.COM</Mail>
                 <SocialFooter>
                     <SocialIconsFooter href="https://github.com/ECecillo">
                         <AiFillGithub size="2rem" />
