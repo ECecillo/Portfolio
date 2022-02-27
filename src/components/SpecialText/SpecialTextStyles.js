@@ -14,6 +14,10 @@ export const Container = styled.div`
   padding: 1rem;
   margin-top: 4rem;
 
+  @media ${props => props.theme.breakpoints.lg} {
+    margin-top: 2rem;
+  }
+  
   @media ${(props) => props.theme.breakpoints.sm} and (orientation: portrait){
     display: grid;
     grid-template-columns: 1fr;
@@ -33,7 +37,7 @@ export const Head1 = styled.h1`
   border: ${(props) => props.theme.colors.color};
   font-size: 6rem;
   
-  @media ${props => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.lg} {
     font-size: 4rem;
   }
   @media ${props => props.theme.breakpoints.sm} and (orientation: landscape){
@@ -73,7 +77,6 @@ export const HireButton = styled.a`
   position: relative;
   display: inline-block;
   padding: 25px 30px;
-  width: 30%;
   justify-self: center;
   color: ${props => props.theme.colors.color};
   text-decoration: none;
@@ -81,6 +84,17 @@ export const HireButton = styled.a`
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
+  width: 30%;
+  @media ${props => props.theme.breakpoints.lg} {
+    width: 40%;
+    margin: 2rem 0 1rem 0;
+  }
+  @media ${props => props.theme.breakpoints.md} {
+    width: 50%;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    width: 70%;
+  }
 
   &:hover {
     background: #03e9f4;
