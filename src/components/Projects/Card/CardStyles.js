@@ -13,9 +13,9 @@ export const Card = styled.div`
   overflow: hidden;
   border-radius: 20px; // Border radius carte.
   box-shadow:
-    rgba(0,0,0, 0.66) 0 20px 40px 0, // Ombre arrière plan
+    rgba(0,0,0, 0.6) 0 10px 25px 0, // Ombre arrière plan
     inset #333 0 0 0 5px, // Assombris la carte.
-    inset rgba(255, 255, 255, 0.8) 0 0 0 6px; // Ligne du Contour
+    inset rgba(255, 255, 255, 0.85) 0 0 0 6px; // Ligne du Contour
   transition: 1s ${returnEasing};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 240px;
@@ -25,7 +25,7 @@ export const Card = styled.div`
 `;
 export const CardBackground = styled.div`
 
-    opacity: 0.5; // Assombrie l'image.
+  opacity: 0.5; // Assombrie l'image.
   position: absolute;
   width: 100%;
   height: 100%;
