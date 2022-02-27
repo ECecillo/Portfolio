@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {
   blink,
   blinkSpeed,
+  rotating_line,
   typeSpeed,
   typewriter
 } from "../../styles/animation";
@@ -9,6 +10,7 @@ import {
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
   padding: 1rem;
   margin-top: 4rem;
 
@@ -59,5 +61,75 @@ export const Head1 = styled.h1`
     background: ${(props) => props.theme.colors.color};
     animation: ${typewriter} ${typeSpeed} steps(13) 1s forwards,
       ${blink} ${blinkSpeed} steps(15) infinite;
+  }
+`;
+
+
+// Source : https://codepen.io/bhadupranjal/pen/vYLZYqQ?editors=0100
+export const HireButton = styled.a`
+  font-weight: bold;
+  font-family: ${props => props.theme.fonts.main};
+  font-size : 1rem;
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  width: 30%;
+  justify-self: center;
+  color: ${props => props.theme.colors.color};
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+
+  &:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
+
+  & span {
+    position: absolute;
+    display: block;
+  }
+  & span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: ${rotating_line.rotating_line_left_right} 1s linear infinite;
+  }
+
+  & span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: ${rotating_line.rotating_line_top_bottom_right} 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  & span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: ${rotating_line.rotating_line_bottom_right_left} 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  & span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: ${rotating_line.rotating_line_bottom_top_left} 1s linear infinite;
+    animation-delay: 0.75s;
   }
 `;

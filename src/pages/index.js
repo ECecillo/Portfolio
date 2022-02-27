@@ -15,10 +15,10 @@ const Home = (props) => {
     // Change the value of Filter.
     handleFilter(Framework);
   };
-  const showSpecial = Personnal_Info.recherche ? <SpecialText /> : null;
   const router = useRouter();
   const lang = router.locale;
   const themeToggler = props.toggler;
+  const showSpecial = Personnal_Info.recherche ? <SpecialText language={lang} /> : null;
 
   return (
     <Layout 
