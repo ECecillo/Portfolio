@@ -290,5 +290,5 @@ export const FadeSection = styled.div`
   opacity: 0;
   transform: translateY(3rem);
   animation: 
-    ${fadeInUp} 4s ease ${low => low ? "4s" : typeSpeed} forwards;
+    ${fadeInUp} 4s ease ${props => props.time ? "2s" : typeSpeed} forwards;
 `;

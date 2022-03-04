@@ -129,7 +129,7 @@ export const projects = [
       description: "Basic Blog using NextJS and Prisma."
     },
     image: '/images/9.png',
-    tags: ['JS', 'NEXT', 'CSS', 'Prisma'],
+    tags: ['JS', 'NEXT', 'CSS', 'Prisma', 'SQL'],
     source: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
     visit: 'https://ececillo-blogr-nextjs-prisma.vercel.app/',
     id: 0,
