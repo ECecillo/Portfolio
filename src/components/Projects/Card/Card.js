@@ -113,12 +113,14 @@ export default function ProjectCards(props) {
 								}, 200);
 							}}  >
 							<IconContainer style={{ transform: styles.frame + "translateZ(30px)" }}>
-								<a href={project.source}>
+								<a href={project.source} target="_blank" rel="noopener noreferrer">
 									<AiFillGithub href={project.source} color="white" size="3rem" />
 								</a>
 								{
-									project.visit !== ''
-										? <a href={project.visit}><AiFillPlayCircle href={project.visit} color='white' size="3rem" /></a>
+									project.visit !== '' ?
+										<a href={project.visit} target="_blank" rel="noopener noreferrer">
+											<AiFillPlayCircle href={project.visit} color='white' size="3rem" />
+										</a>
 										: ''
 								}
 							</IconContainer>
