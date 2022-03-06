@@ -1,6 +1,21 @@
 export const projects = [
   {
     fr : {
+      title: 'Clone Spotify',
+      description: "Application web qui permet d'écouter de la musique en utilisant l'API de Spotify réalisé avec Next-Auth, NextJS et TailwindCSS.",
+    },
+    en : {
+      title: "Spotify Clone",
+      description: "Using the Spotify API, the users can listen to the songs that are nested inside their playlist. Made with NextJS, Next-Auth and TailwindCSS."
+    },
+    image: '/images/10.png',
+    tags: ['JS', 'NextJS', 'CSS', 'HTML', 'TailwindCSS'],
+    source: 'https://github.com/ECecillo/SpotifyClone',
+    visit:'https://spotify-clone-ececillo.vercel.app ',
+    id: 0,
+  },
+  {
+    fr : {
       title: 'Gestionnaire de QCM API',
       description: "Gestion des requêtes/réponses vers une API avec JS, affichages, créations, modifications des données à partir de la page.",
     },
@@ -12,7 +27,7 @@ export const projects = [
     tags: ['JS', 'HTML', 'CSS'],
     source: 'https://github.com/ECecillo/Questionnary_API',
     visit:'',
-    id: 0,
+    id: 1,
   },
   {
     fr : {      
@@ -27,7 +42,7 @@ export const projects = [
     tags: ['React', 'NextJS', 'Styled Component', 'JS', 'CSS', 'Figma'],
     source: 'https://github.com/ECecillo/Portfolio',
     visit:'',
-    id: 1,
+    id: 2,
   },
   {
     fr : {
@@ -42,7 +57,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Star_Wars_Scene_GKIT',
     visit: '',
-    id: 2,
+    id: 3,
   }, 
   {
     fr : {
@@ -57,7 +72,7 @@ export const projects = [
     tags: ['SQL', 'PHP', 'CSS'],
     source: 'https://github.com/ECecillo/PinterestLike',
     visit: '',
-    id: 3,
+    id: 4,
   },
   {
     fr : {
@@ -72,7 +87,7 @@ export const projects = [
     tags: ['C++', 'SDL'],
     source: 'https://github.com/ECecillo/Uno',
     visit: '',
-    id: 4,
+    id: 5,
   },
   {
     fr : {
@@ -87,7 +102,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Astar_Pathfinding',
     visit: '',
-    id: 5,
+    id: 6,
   },
   {
     fr : {
@@ -102,7 +117,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JS'],
     source: 'https://github.com/ECecillo/MemoryWeb',
     visit: 'http://ececillo.me/MemoryWeb/',
-    id: 6,
+    id: 7,
   },
   {
     fr: {
@@ -117,7 +132,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Red_Black_Tree',
     visit: '',
-    id: 7,
+    id: 8,
   },
   {
     fr : {
@@ -132,7 +147,7 @@ export const projects = [
     tags: ['JS', 'NEXT', 'CSS', 'Prisma', 'SQL'],
     source: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
     visit: 'https://ececillo-blogr-nextjs-prisma.vercel.app/',
-    id: 0,
+    id: 8,
   }
 ];
 
