@@ -57,14 +57,14 @@ export const Head1 = styled.h1`
     left: 0;
   }
   &::before {
-    animation: ${typewriter} ${typeSpeed} steps(13) 1s forwards;
+    animation: ${typewriter} ${typeSpeed} steps(12) 1s forwards;
     background: ${(props) => props.theme.colors.background};
   }
   &::after {
     width: 0.125rem;
     background: ${(props) => props.theme.colors.color};
-    animation: ${typewriter} ${typeSpeed} steps(13) 1s forwards,
-      ${blink} ${blinkSpeed} steps(15) infinite;
+    animation: ${typewriter} ${typeSpeed} steps(12) 1s forwards,
+      ${blink} ${blinkSpeed} steps(16) infinite;
   }
 `;
 
