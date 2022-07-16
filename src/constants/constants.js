@@ -24,7 +24,7 @@ export const projects = [
       description: "Using the Spotify API, the users can listen to the songs that are nested inside their playlist. Made with NextJS, Next-Auth and TailwindCSS...."
     },
     image: '/images/10.png',
-    tags: ['JS', 'NextJS', 'CSS', 'HTML', 'TailwindCSS'],
+    tags: ['JS', 'React', 'NextJS', 'CSS', 'HTML', 'TailwindCSS'],
     source: 'https://github.com/ECecillo/SpotifyClone',
     visit:'https://spotify-clone-ececillo.vercel.app',
     id: 1,
@@ -159,7 +159,7 @@ export const projects = [
       description: "Basic Blog using NextJS and Prisma."
     },
     image: '/images/9.png',
-    tags: ['JS', 'NEXT', 'CSS', 'Prisma', 'SQL'],
+    tags: ['JS', 'React','NextJS', 'CSS', 'Prisma', 'SQL'],
     source: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
     visit: 'https://ececillo-blogr-nextjs-prisma.vercel.app/',
     id: 10,
