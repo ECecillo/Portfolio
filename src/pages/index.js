@@ -9,7 +9,6 @@ import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 
 const Home = (props) => {
-
   const [filter, handleFilter] = useState('All');
   const changeFilter = (Framework) => {
     // Change the value of Filter.
@@ -18,17 +17,17 @@ const Home = (props) => {
   const router = useRouter();
   const lang = router.locale;
   const themeToggler = props.toggler;
-  const showSpecial = Personnal_Info.recherche ? <SpecialText language={lang} /> : null;
+  const showSpecial = Personnal_Info.recherche ? (
+    <SpecialText language={lang} />
+  ) : null;
 
   return (
-    <Layout 
-    toggler={themeToggler} 
-    theme={props.ambientTheme}>
+    <Layout toggler={themeToggler} theme={props.ambientTheme}>
       {showSpecial}
-      <FadeSection style={{width: "90%", margin: "auto"}}>
-        <Presentation language={lang} filtering={changeFilter}/>
-        <Projects language={lang} filter={filter} filtering={changeFilter}/>
-      <Footer />
+      <FadeSection style={{ width: '90%', margin: 'auto' }}>
+        <Presentation language={lang} filtering={changeFilter} />
+        <Projects language={lang} filter={filter} filtering={changeFilter} />
+        <Footer />
       </FadeSection>
     </Layout>
   );

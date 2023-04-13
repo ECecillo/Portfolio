@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Container } from "./LayoutStyles";
-import Header from "../components/Header/Header";
-import { useRouter } from "next/router";
-import Sidebar from "../components/Sidebar/Sidebar";
-import useWindowSize from "../hooks/WindowSize/UseWindowSize";
+import React, { useState } from 'react';
+import { Container } from './LayoutStyles';
+import Header from '../components/Header/Header';
+import { useRouter } from 'next/router';
+import Sidebar from '../components/Sidebar/Sidebar';
+import useWindowSize from '../hooks/WindowSize/UseWindowSize';
 
 export default function Layout(props) {
   /* React Hook qui permettra d'activer la sidebar */
