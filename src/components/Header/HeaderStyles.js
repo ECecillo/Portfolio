@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
@@ -19,7 +19,7 @@ export const Container = styled.div`
 `;
 
 export const LinkDiv = styled.div`
-  font-family: ${props => props.theme.fonts.main};
+  font-family: ${(props) => props.theme.fonts.main};
   grid-area: 1 / 1 / 1 / 2;
   display: grid;
   grid-template: 1fr / 1fr 1fr;

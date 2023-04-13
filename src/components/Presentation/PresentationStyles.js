@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { heartBeat, wobbleBottom } from "../../styles/animation";
+import styled from 'styled-components';
+import { heartBeat, wobbleBottom } from '../../styles/animation';
 
 export const BioLayout = styled.div`
   display: grid;
@@ -8,7 +8,6 @@ export const BioLayout = styled.div`
   @media ${(props) => props.theme.breakpoints.xl} {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.2fr;
-    
   }
 `;
 
@@ -16,7 +15,7 @@ export const LeftSection = styled.div`
   grid-area: 1 / 1 / 1 / 2;
   margin-right: 3rem;
   font-size: 1rem;
-  font-family: ${props => props.theme.fonts.presentation};
+  font-family: ${(props) => props.theme.fonts.presentation};
   @media ${(props) => props.theme.breakpoints.xl} {
     width: 80%;
     display: flex;
@@ -49,7 +48,6 @@ export const MiddleSection = styled.div`
     height: 100%;
     margin: auto;
   }
-  
 `;
 export const RightSection = styled.div`
   grid-area: 1 / 3 / 1 / 4;

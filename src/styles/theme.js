@@ -6,16 +6,15 @@ import theme from '../themes/default';
 import GlobalStyles from './globals';
 
 const Theme = (props) => {
+  // Get the state variable that define the theme of the page.
+  const AmbientTheme = props.children.props.ambientTheme;
 
-    // Get the state variable that define the theme of the page.
-    const AmbientTheme = props.children.props.ambientTheme;
-
-    return (
-        <ThemeProvider theme={theme[AmbientTheme]}>
-            <GlobalStyles />
-            {props.children}
-        </ThemeProvider>
-    )
+  return (
+    <ThemeProvider theme={theme[AmbientTheme]}>
+      <GlobalStyles />
+      {props.children}
+    </ThemeProvider>
+  );
 };
 
 export default Theme;

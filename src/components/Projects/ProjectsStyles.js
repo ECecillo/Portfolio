@@ -1,26 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   ButtonFront,
   SectionTitle,
-  Section
-} from "../../styles/GlobalComponentsStyles/globalC";
-
-
+  Section,
+} from '../../styles/GlobalComponentsStyles/globalC';
 
 export const ProjectSection = styled(Section)`
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1rem;
   grid-template-rows: max-content max-content 1fr;
-  font-family: ${props => props.theme.fonts.project};
+  font-family: ${(props) => props.theme.fonts.project};
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
   }
-`
+`;
 
 export const TitleButtonSection = styled.div`
   display: grid;
-  grid-template-columns: repeat(3,max-content);
+  grid-template-columns: repeat(3, max-content);
   grid-template-rows: 0.5fr 0.5fr;
   justify-content: center;
   align-items: center;
@@ -45,7 +43,6 @@ export const AllButton = styled(ButtonFront)`
     font-size: 1.5rem;
   }
 `;
-
 
 export const GridContainer = styled.section`
   display: grid;

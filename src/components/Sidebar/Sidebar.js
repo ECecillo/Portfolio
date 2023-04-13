@@ -1,12 +1,12 @@
-import React from "react";
-import logo from "../../../public/images/Logo.png";
+import React from 'react';
+import logo from '../../../public/images/Logo.png';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
-  AiOutlineGlobal
-} from "react-icons/ai";
-import { FiMoon } from "react-icons/fi";
+  AiOutlineGlobal,
+} from 'react-icons/ai';
+import { FiMoon } from 'react-icons/fi';
 import {
   BrandClose,
   BrandDiv,
@@ -16,11 +16,11 @@ import {
   SidebarIcons,
   SidebarLink,
   SidebarMenu,
-  SidebarSocial
-} from "./SidebarStyles";
-import Link from "next/link";
-import Image from "next/image";
-import { Navbar } from "../Header/data/data";
+  SidebarSocial,
+} from './SidebarStyles';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Navbar } from '../Header/data/data';
 
 export default function Sidebar(props) {
   let localLanguage = props.language;
@@ -29,38 +29,34 @@ export default function Sidebar(props) {
     props.toggleTheme();
   };
   const applyFilter =
-    props.theme === "dark"
-      ? "invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)"
-      : "";
+    props.theme === 'dark'
+      ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
+      : '';
 
   let textLanguage =
-    localLanguage === "fr"
+    localLanguage === 'fr'
       ? Navbar.fr.map((element) => (
-        <li key={element}>
-          <Link
-            href={
-              element === "Accueil" || element === "Home"
-                ? "/"
-                : "#" + element
-            }
-          >
-            <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
-          </Link>
-        </li>
-      ))
+          <li key={element}>
+            <Link
+              href={
+                element === 'Accueil' || element === 'Home' ? '/' : '#' + element
+              }
+            >
+              <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
+            </Link>
+          </li>
+        ))
       : Navbar.en.map((element) => (
-        <li key={element}>
-          <Link
-            href={
-              element === "Accueil" || element === "Home"
-                ? "/"
-                : "#" + element
-            }
-          >
-            <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
-          </Link>
-        </li>
-      ));
+          <li key={element}>
+            <Link
+              href={
+                element === 'Accueil' || element === 'Home' ? '/' : '#' + element
+              }
+            >
+              <SidebarLink onClick={props.toggle}>{element}</SidebarLink>
+            </Link>
+          </li>
+        ));
   // On va charger dynamiquement le code de la sidebar en fonction de la variable isMobile (évite d'ajouter du code html pour rien).
   return (
     <>
@@ -77,10 +73,7 @@ export default function Sidebar(props) {
           <SidebarMenu>{textLanguage}</SidebarMenu>
           <SidebarSocial>
             <SidebarIcons>
-              <Link
-                href={"/"}
-                locale={localLanguage === "en-US" ? "fr" : "en-US"}
-              >
+              <Link href={'/'} locale={localLanguage === 'en-US' ? 'fr' : 'en-US'}>
                 <AiOutlineGlobal size="2rem" />
               </Link>
             </SidebarIcons>
