@@ -21,13 +21,15 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { Navbar } from '../Header/data/data';
+import { useContext } from 'react';
+import { ThemeContext } from '../../themes/context';
 
 export default function Sidebar(props) {
   let localLanguage = props.language;
-
-  const changeTheme = () => {
-    props.toggleTheme();
-  };
+  
+  const themeContext= useContext(ThemeContext);
+  const changeTheme = () => themeContext.toggler();
+  
   const applyFilter =
     props.theme === 'dark'
       ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
