@@ -1,12 +1,8 @@
 import { Personnal_Info } from '../../constants/constants';
 
 import React from 'react';
-import { PContent, ContentTitle, Section, SectionContent } from './BioStyles';
-import {
-  ButtonFront,
-  SectionDivider,
-  SectionText,
-} from '../../styles/GlobalComponentsStyles/globalC';
+import { PContent, Section, SectionContent } from './BioStyles';
+import { SectionDivider } from '../../styles/GlobalComponentsStyles/globalC';
 
 export default function Bio(props) {
   const lang = props.language;

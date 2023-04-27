@@ -1,6 +1,21 @@
 export const projects = [
   {
     fr: {
+      title: 'KestioLive',
+      description: `Plateforme web centré sur l'accompagnement et la formation des entreprises clientes à travers des visio ou des ateliers en E-learning. 
+      Développé à l'aide de Meteor, Postgresql, React ...`,
+    },
+    en: {
+      title: 'KLive',
+      description: 'Multi-purpose web platform focused on the support and training of client companies through digital tools. Developed with Meteor, Postgresql, React ...',
+    },
+    image: '/images/12.png',
+    tags: [],
+    visit: 'https://www.kestio.com/',
+    id: 0,
+  },
+  {
+    fr: {
       title: 'KIWI',
       description:
         'Application Web qui a pour vocation de regrouper différents services de musiques sur une seule plateforme. Réalisé avec Next-Auth, NextJS et TailwindCSS...',
@@ -24,7 +39,7 @@ export const projects = [
     ],
     source: 'https://github.com/ECecillo/KIWI',
     visit: '',
-    id: 0,
+    id: 1,
   },
   {
     fr: {
@@ -41,7 +56,7 @@ export const projects = [
     tags: ['JS', 'React', 'NextJS', 'CSS', 'HTML', 'TailwindCSS'],
     source: 'https://github.com/ECecillo/SpotifyClone',
     visit: 'https://spotify-clone-ececillo.vercel.app',
-    id: 1,
+    id: 2,
   },
   {
     fr: {
@@ -58,7 +73,7 @@ export const projects = [
     tags: ['JS', 'HTML', 'CSS'],
     source: 'https://github.com/ECecillo/Questionnary_API',
     visit: '',
-    id: 2,
+    id: 3,
   },
   {
     fr: {
@@ -75,7 +90,7 @@ export const projects = [
     tags: ['React', 'NextJS', 'Styled Component', 'JS', 'CSS', 'Figma'],
     source: 'https://github.com/ECecillo/Portfolio',
     visit: '',
-    id: 3,
+    id: 4,
   },
   {
     fr: {
@@ -92,7 +107,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Star_Wars_Scene_GKIT',
     visit: '',
-    id: 4,
+    id: 5,
   },
   {
     fr: {
@@ -109,7 +124,7 @@ export const projects = [
     tags: ['SQL', 'PHP', 'CSS'],
     source: 'https://github.com/ECecillo/PinterestLike',
     visit: '',
-    id: 5,
+    id: 6,
   },
   {
     fr: {
@@ -126,7 +141,7 @@ export const projects = [
     tags: ['C++', 'SDL'],
     source: 'https://github.com/ECecillo/Uno',
     visit: '',
-    id: 6,
+    id: 7,
   },
   {
     fr: {
@@ -143,7 +158,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Astar_Pathfinding',
     visit: '',
-    id: 7,
+    id: 8,
   },
   {
     fr: {
@@ -160,7 +175,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JS'],
     source: 'https://github.com/ECecillo/MemoryWeb',
     visit: 'http://ececillo.me/MemoryWeb/',
-    id: 8,
+    id: 9,
   },
   {
     fr: {
@@ -177,7 +192,7 @@ export const projects = [
     tags: ['C++'],
     source: 'https://github.com/ECecillo/Red_Black_Tree',
     visit: '',
-    id: 9,
+    id: 10,
   },
   {
     fr: {
@@ -192,28 +207,28 @@ export const projects = [
     tags: ['JS', 'React', 'NextJS', 'CSS', 'Prisma', 'SQL'],
     source: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
     visit: 'https://ececillo-blogr-nextjs-prisma.vercel.app/',
-    id: 10,
+    id: 11,
   },
 ];
 
 export const Personnal_Info = {
   recherche: true,
   fr: {
-    Poste: 'Développeur Web Front-End',
+    Poste: 'Développeur Web Full-Stack',
     Description:
       "Passionné par les nouvelles Technologies et la création d'Application depuis mon adolescence. Aujourd'hui, je code en C++, React/Nextjs et Javascript des projets en équipes ou en solo que je poste sur Github. N'hésitez pas à checker mes réseaux pour plus d'info 😉 , à très bientôt 😃.",
   },
   en: {
-    Job: 'Front-End Developer',
+    Job: 'Full-stack Developer',
     Description: `
-    Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications. 
+    Since I was a teenager, I've always been fascinated by new technologies and the process of creating applications.
     Today, I code in C++,  React/Nextjs and Javascript, projects with a team or at Home, which I post on Github.
     Please feel free to check my socials (Linkedin, Twitter) and contact me if you need anything 😉 .See you soon!😃`,
   },
   Contact: {
-    adress: '41 Vieille Route',
-    city: 'Chaponost',
-    postal_code: '69630',
+    adress: '151 Av. Roger Salengro',
+    city: 'Villeurbanne',
+    postal_code: '69100',
     phone: '+33 6 81 24 51 27',
     email: 'enzo.cecillon@gmail.com',
   },

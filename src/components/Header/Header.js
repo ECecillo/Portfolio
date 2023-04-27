@@ -23,18 +23,19 @@ import {
 import logo from '../../../public/images/Logo.png';
 import { FadeSection } from '../../styles/GlobalComponentsStyles/globalC';
 import { Navbar } from './data/data';
+import { useContext } from 'react';
+import { ThemeContext } from '../../themes/context';
 
 export default function Header(props) {
   let localLanguage = props.language;
+  const themeContext = useContext(ThemeContext);
 
-  const changeTheme = () => {
-    props.toggleTheme();
-  };
+  const changeTheme = () => themeContext.toggler();
 
   const applyFilter =
-    props.theme === 'dark'
-      ? 'invert(100%) sepia(100%) saturate(1%) hue-rotate(176deg) brightness(94%) contrast(100%)'
-      : '';
+    themeContext.ambientTheme === 'dark'
+      ? 'invert(100) sepia(0) saturate(1) hue-rotate(0deg) brightness(100)'
+      : 'invert(0) sepia(0) saturate(0) brightness(0)';
 
   const Navbar_Content = localLanguage === 'fr' ? Navbar.fr : Navbar.en;
 
@@ -47,7 +48,7 @@ export default function Header(props) {
   ));
 
   return (
-    <FadeSection>
+    <FadeSection fadeSpeed={'1.5s'} typeTime={'1.5s'}>
       <Container>
         <LogoDiv style={{ filter: applyFilter }}>
           <Image src={logo} alt="Logo du site" href="/" />

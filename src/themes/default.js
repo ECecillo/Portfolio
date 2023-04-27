@@ -33,6 +33,17 @@ const darkTheme = {
   },
   breakpoints: breakpoints,
 };
+
+export const filter = {
+  dark: {
+    logo:
+      "invert(100) sepia(0) saturate(1) hue-rotate(0deg) brightness(100)"
+  },
+  light: {
+    logo: "invert(0) sepia(0) saturate(0) brightness(0)"
+  }
+};
+
 // Créer dictionnaire pour light and dark avec les couleurs dans theme.
 export default {
   light: lightTheme,
