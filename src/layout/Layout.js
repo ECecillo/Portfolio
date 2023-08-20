@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Container } from "./LayoutStyles";
-import Header from "../components/Header/Header";
-import { useRouter } from "next/router";
-import Sidebar from "../components/Sidebar/Sidebar";
-import useWindowSize from "../hooks/WindowSize/UseWindowSize";
+import React, { useState } from 'react';
+import { Container } from './LayoutStyles';
+import Header from '../components/Header/Header';
+import { useRouter } from 'next/router';
+import Sidebar from '../components/Sidebar/Sidebar';
+import useWindowSize from '../hooks/WindowSize/UseWindowSize';
 
 export default function Layout(props) {
   /* React Hook qui permettra d'activer la sidebar */
@@ -12,8 +12,6 @@ export default function Layout(props) {
   const sideBar = () => {
     setIsOpen(!isOpen);
   };
-  // Le Handler qui nous permettra de changer l'état du Theme qui vient de index.js.
-  const themeToggler = props.toggler;
 
   /* Langue */
   const router = useRouter();
@@ -25,7 +23,6 @@ export default function Layout(props) {
   // true : la taille de la fenêtre est un 📱 .
   // false : ~ (//).
   const isMobile = size.width <= 1024 ? true : false;
-  console.log(isMobile);
 
   return (
     <Container>
@@ -34,14 +31,12 @@ export default function Layout(props) {
         isOpen={isOpen}
         toggle={sideBar}
         language={lang}
-        toggleTheme={themeToggler}
         theme={props.theme}
       />
 
       <Header
         language={lang}
         toggle={sideBar}
-        toggleTheme={themeToggler}
         theme={props.theme}
       />
 

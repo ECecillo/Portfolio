@@ -1,9 +1,8 @@
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components';
 
 // Variable pour la rapidité du curseur, animation et Nombre de lettre.
 export const typeSpeed = '4s';
-export const blinkSpeed = "750ms";
-
+export const blinkSpeed = '750ms';
 
 // Fais la barre vertical écriture de texte.
 export const blink = keyframes`
@@ -155,30 +154,29 @@ export const heartBeatWebkit = keyframes`
               animation-timing-function: ease-out;
     }   
 `;
-export const rotating_line =
-{
-        rotating_line_left_right: keyframes`
+export const rotating_line = {
+  rotating_line_left_right: keyframes`
         0%{
             left: -100%;
         }
         50%,100%{
             left: 100%;
         }`,
-        rotating_line_top_bottom_right: keyframes`
+  rotating_line_top_bottom_right: keyframes`
         0%{
         	top: -100%;
         }
         50%,100%{
             top: 100%;
         }`,
-        rotating_line_bottom_right_left: keyframes`
+  rotating_line_bottom_right_left: keyframes`
         0%{
 			right: -100%;
         }
         50%,100%{
             right: 100%;
         }`,
-		rotating_line_bottom_top_left: keyframes`
+  rotating_line_bottom_top_left: keyframes`
         0%{
 			bottom: -100%;
 		}

@@ -1,5 +1,5 @@
-import { FaTimes } from "react-icons/fa";
-import styled from "styled-components";
+import { FaTimes } from 'react-icons/fa';
+import styled from 'styled-components';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -15,8 +15,8 @@ export const SidebarContainer = styled.aside`
   left: 0;
   transition: 0.3s ease-in-out;
 
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0%')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 
   @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,7 +35,7 @@ export const Icon = styled.div`
   justify-self: center;
   transform: translate(-100%, 50%);
   cursor: pointer;
-  
+
   @media ${(props) => props.theme.breakpoints.lg} and (orientation: landscape) {
     grid-area: 1 / 3 / 1 / 4;
     position: relative;
@@ -97,7 +97,7 @@ export const SidebarLink = styled.a`
   font-size: 2rem;
   list-style: none;
   transition: 0.2s ease-in-out;
-  margin : 1rem 0;
+  margin: 1rem 0;
   color: ${(props) => props.theme.colors.color};
 
   &:hover {
