@@ -24,8 +24,8 @@ const Home = (props) => {
     <Layout>
       {showSpecial}
       <FadeSection
-        fadeSpeed={'1.5s'}
-        typeTime={'1.5s'}
+        fadeSpeed={'4s'}
+        typeTime={'4s'}
         style={{ width: '90%', margin: 'auto' }}
       >
         <Presentation language={lang} filtering={changeFilter} />
