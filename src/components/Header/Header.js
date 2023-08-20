@@ -48,7 +48,7 @@ export default function Header(props) {
   ));
 
   return (
-    <FadeSection fadeSpeed={'1.5s'} typeTime={'1.5s'}>
+    <FadeSection fadeSpeed={'4s'} typeTime={'3s'}>
       <Container>
         <LogoDiv style={{ filter: applyFilter }}>
           <Image src={logo} alt="Logo du site" href="/" />

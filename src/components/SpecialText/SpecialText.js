@@ -14,7 +14,7 @@ export default function SpecialText(props) {
   return (
     <Container>
       <Head1>{text}</Head1>
-      <FadeSection time>
+      <FadeSection fadeSpeed={'4s'} typeTime={'3s'} >
         <HireButton href={Linkedin_Page}>
           <span></span>
           <span></span>
