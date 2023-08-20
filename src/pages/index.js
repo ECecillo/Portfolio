@@ -9,7 +9,6 @@ import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 
 const Home = (props) => {
-
   const [filter, handleFilter] = useState('All');
   const changeFilter = (Framework) => {
     // Change the value of Filter.
@@ -17,21 +16,34 @@ const Home = (props) => {
   };
   const router = useRouter();
   const lang = router.locale;
-  const themeToggler = props.toggler;
-  const showSpecial = Personnal_Info.recherche ? <SpecialText language={lang} /> : null;
+  // TODO Move this to a hook or inside context so it can be accessed from anywhere.
+  const lookingForInternship = Personnal_Info.recherche;
+  const showSpecial = lookingForInternship ? <SpecialText language={lang} /> : <></>;
 
   return (
-    <Layout 
-    toggler={themeToggler} 
-    theme={props.ambientTheme}>
+    <Layout>
       {showSpecial}
-      <FadeSection style={{width: "90%", margin: "auto"}}>
-        <Presentation language={lang} filtering={changeFilter}/>
-        <Projects language={lang} filter={filter} filtering={changeFilter}/>
-      <Footer />
+      <FadeSection
+        fadeSpeed={'4s'}
+        typeTime={'4s'}
+        style={{ width: '90%', margin: 'auto' }}
+      >
+        <Presentation language={lang} filtering={changeFilter} />
+        <Projects language={lang} filter={filter} filtering={changeFilter} />
+        <Footer />
       </FadeSection>
     </Layout>
   );
 };
+
+export async function getServerSideProps({ req }) {
+  const theme = req.cookies.theme ?? 'light';
+  return {
+    props: {
+      theme
+    }
+  };
+};
+
 
 export default Home;

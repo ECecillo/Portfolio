@@ -4,18 +4,18 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../themes/default';
 // Fichier où on va mettre toutes les propriétés de bases pour nos tags.
 import GlobalStyles from './globals';
+import { useContext } from "react";
+import { ThemeContext } from '../themes/context';
 
-const Theme = (props) => {
+const Theme = ({ children }) => {
+  const context = useContext(ThemeContext)
 
-    // Get the state variable that define the theme of the page.
-    const AmbientTheme = props.children.props.ambientTheme;
-
-    return (
-        <ThemeProvider theme={theme[AmbientTheme]}>
-            <GlobalStyles />
-            {props.children}
-        </ThemeProvider>
-    )
+  return (
+    <ThemeProvider theme={theme[context.ambientTheme]}>
+      <GlobalStyles />
+      {children}
+    </ThemeProvider>
+  );
 };
 
 export default Theme;
