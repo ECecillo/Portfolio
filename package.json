@@ -1,5 +1,8 @@
 {
   "name": "portfolio",
+  "engines": {
+    "node": ">=18"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
