@@ -1,0 +1,6 @@
+build/
+node_modules/
+!.storybook,
+tsconfig.json
+.eslintrc.json
+vite.config.ts
