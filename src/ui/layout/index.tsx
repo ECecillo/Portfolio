@@ -6,14 +6,16 @@ import Projects from '@/ui/layout/projects';
 
 function Layout() {
   return (
-    <div className="flex flex-col items-center">
-      <main>
+    <div className="flex flex-col">
+      <header>
         <Header />
+      </header>
+      <main className="flex flex-col items-center">
         <HeroSection />
         <AboutMe />
         <Projects />
       </main>
-      <footer>
+      <footer className="flex flex-col items-center">
         <Footer />
       </footer>
     </div>
