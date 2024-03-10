@@ -1,4 +1,5 @@
 import MailLink from '@/ui/components/mail-link';
+import SocialList from '@/ui/components/socials';
 
 function Footer() {
   return (
@@ -7,7 +8,8 @@ function Footer() {
       <section className="text-center">
         <p>Enzo CECILLON ©{new Date().getFullYear()}</p>
       </section>
-      <div>
+      <div className="flex flex-row justify-evenly">
+        <SocialList />
       </div>
     </div>
   );
