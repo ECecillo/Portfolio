@@ -64,6 +64,10 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      backgroundImage: {
+        'hero-pattern':
+          'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
+      },
     },
   },
 };

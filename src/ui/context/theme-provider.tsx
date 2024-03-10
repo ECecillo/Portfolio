@@ -10,9 +10,11 @@ type ThemeProviderProps = {
   storageKey?: string;
 };
 
+export type ThemeMutator = (theme: Theme) => void;
+
 type ThemeProviderState = {
   theme: Theme;
-  setTheme: (theme: Theme) => void;
+  setTheme: ThemeMutator;
 };
 
 const initialState: ThemeProviderState = {
