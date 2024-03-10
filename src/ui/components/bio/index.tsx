@@ -16,15 +16,13 @@ export default function Bio() {
         <Divider />
         <section className="text-xl">
           <p>
-            <p>
-              <br />
-              Passionné par les nouvelles Technologies et la création
-              d&rsquo;Application depuis mon adolescence. <br />
-              <br />
-              Aujourd&rsquo;hui, je code en C++, React/Nextjs et Javascript des
-              projets en équipes ou en solo que je poste sur Github. <br />
-              <br />
-            </p>
+            <br />
+            Passionné par les nouvelles Technologies et la création
+            d&rsquo;Application depuis mon adolescence. <br />
+            <br />
+            Aujourd&rsquo;hui, je code en C++, React/Nextjs et Javascript des projets
+            en équipes ou en solo que je poste sur Github. <br />
+            <br />
           </p>
         </section>
         <Divider />
