@@ -59,10 +59,63 @@ export default {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'fade-in-up': {
+          from: { opacity: '0', transform: 'translateY(-3rem)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        typewriter: {
+          to: {
+            left: '100%',
+          },
+        },
+        blink: {
+          '0%': {
+            opacity: '0',
+          },
+          '0.1%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '1',
+          },
+          '50.1%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
+        'rotating-line-top-left-right': {
+          '0%': { left: '-100%' },
+          '50%, 100%': { left: '100%' },
+        },
+        'rotating-line-top-bottom-right': {
+          '0%': { top: '-100%' },
+          '50%, 100%': { top: '100%' },
+        },
+        'rotating-line-bottom-right-left': {
+          '0%': { right: '-100%' },
+          '50%, 100%': { right: '100%' },
+        },
+        'rotating-line-bottom-top-left': {
+          '0%': { bottom: '-100%' },
+          '50%, 100%': { bottom: '100%' },
+        },
       },
       animation: {
+        typewriter: 'typewriter 2s steps(11) forwards',
+        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in-up': 'fade-in-up 4s ease',
+        'rotating-line-top-left-right':
+          'rotating-line-top-left-right 1s linear infinite',
+        'rotating-line-top-bottom-right':
+          'rotating-line-top-bottom-right 1s linear infinite',
+        'rotating-line-bottom-right-left':
+          'rotating-line-bottom-right-left 1s linear infinite',
+        'rotating-line-bottom-top-left':
+          'rotating-line-bottom-top-left 1s linear infinite',
       },
       backgroundImage: {
         'hero-pattern':
