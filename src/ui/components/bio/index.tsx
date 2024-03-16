@@ -34,6 +34,7 @@ export default function Bio() {
             enzo.cecillon@gmail.com
           </p>
         </section>
+        <Divider />
       </div>
     </div>
   );
