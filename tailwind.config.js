@@ -10,6 +10,11 @@ export default {
       },
     },
     extend: {
+      transitionTimingFunction: {
+        'hover-easing': 'cubic-bezier(0.23, 1, 0.32, 1)',
+        'return-easing': 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
+        'card-info-easing': 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
