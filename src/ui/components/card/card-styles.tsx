@@ -4,18 +4,16 @@ export const CardWrapper = ({
   children,
   onMouseMove,
   onMouseLeave,
-  className = '',
 }: {
   children: React.ReactNode;
   onMouseMove: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   onMouseLeave: () => void;
-  className?: string;
   style?: React.CSSProperties;
 }) => (
   <div
     onMouseMove={onMouseMove}
     onMouseLeave={onMouseLeave}
-    className={`card-wrapper ${className}`}>
+    className={`rounded-3xl space-y-5 card-wrapper`}>
     {children}
   </div>
 );
@@ -25,7 +23,7 @@ export const Card = ({
   style,
 }: {
   children: React.ReactNode;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }) => (
   <div
     style={style}
@@ -38,7 +36,6 @@ export const Card = ({
       place-content-center
       w-60
       h-80
-      m-1
 
       bg-background
       overflow-hidden
@@ -48,20 +45,13 @@ export const Card = ({
       ease-return-easing
 
       sm:w-60
-      sm:h-80
-      sm:m-4`}>
+      sm:h-80`}>
     {children}
   </div>
 );
 
-export const CardBackground = ({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style: React.CSSProperties;
-}) => (
-  <div
+export const CardBackground = ({ style }: { style?: React.CSSProperties }) => (
+  <span
     className={`
       absolute
       w-full
@@ -77,14 +67,13 @@ export const CardBackground = ({
       transition-opacity
       duration-1000
       ease-out`}
-    style={style}>
-    {children}
-  </div>
+    style={style}
+  />
 );
 
 export const CardInfo = ({ children }: { children: React.ReactNode }) => (
   <section
-    className={`card-info absolute bottom-0 py-4 w-11/12 translate-y-1/2 transition duration-200 delay-500 ease-card-info-easing`}>
+    className={`card-info absolute bottom-0 py-4 w-full translate-y-1/2 transition duration-200 delay-500 ease-card-info-easing`}>
     {children}
   </section>
 );
@@ -94,7 +83,7 @@ export const IconContainer = ({
   style,
 }: {
   children: React.ReactNode;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }) => (
   <div
     style={style}

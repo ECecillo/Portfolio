@@ -16,7 +16,7 @@ function Layout() {
         <AboutMe />
         <Projects />
       </main>
-      <footer className="flex flex-col items-center">
+      <footer className="flex flex-col items-center mb-4">
         <Divider />
         <Footer />
       </footer>

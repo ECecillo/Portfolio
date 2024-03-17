@@ -1,4 +1,10 @@
-import { AiFillGithub, AiFillPlayCircle } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
+import { GoBrowser } from 'react-icons/go';
+
+const icons = {
+  github: <AiFillGithub size="3rem" />,
+  preview: <GoBrowser size="3rem" />,
+};
 
 export const projects = [
   {
@@ -8,7 +14,7 @@ export const projects = [
     links: [
       {
         href: 'https://www.kestio.com/',
-        icon: <AiFillPlayCircle size="3rem" />,
+        icon: icons.preview,
       },
     ],
     fr: {
@@ -39,7 +45,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/KIWI',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -60,11 +66,11 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/SpotifyClone',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
       {
         href: 'https://spotify-clone-ececillo.vercel.app',
-        icon: <AiFillPlayCircle size="3rem" />,
+        icon: icons.preview,
       },
     ],
     fr: {
@@ -85,7 +91,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Questionnary_API',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -106,7 +112,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Portfolio',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -127,7 +133,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Star_Wars_Scene_GKIT',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -148,7 +154,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/PinterestLike',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -169,7 +175,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Uno',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -190,7 +196,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Astar_Pathfinding',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -211,11 +217,11 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/MemoryWeb',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
       {
         href: 'http://ececillo.me/MemoryWeb/',
-        icon: <AiFillPlayCircle size="3rem" />,
+        icon: icons.preview,
       },
     ],
     fr: {
@@ -236,7 +242,7 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/Red_Black_Tree',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
     ],
     fr: {
@@ -257,11 +263,11 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/ECecillo/ececillo-blogr-nextjs-prisma',
-        icon: <AiFillGithub size="3rem" />,
+        icon: icons.github,
       },
       {
         href: 'https://ececillo-blogr-nextjs-prisma.vercel.app/',
-        icon: <AiFillPlayCircle size="3rem" />,
+        icon: icons.preview,
       },
     ],
     fr: {
