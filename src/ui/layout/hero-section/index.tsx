@@ -1,7 +1,10 @@
 function HeroSection() {
   return (
     <div className="w-full text-center m-10">
-      <h1
+      <a
+        href="https://linkedin.com/in/ececillo"
+        target="_blank"
+        rel="noopener noreferrer"
         className={`
           relative
           justify-self-center
@@ -9,8 +12,14 @@ function HeroSection() {
           my-0
           mx-auto
 
-          text-4xl
+          text-5xl
           font-mono
+          cursor-pointer
+          transition
+          hover:text-blue-500
+          ease-in-out
+          duration-300
+
 
           before:absolute
           before:inset-0
@@ -24,7 +33,7 @@ function HeroSection() {
           after:animate-caret
       `}>
         #OPENTOWORK
-      </h1>
+      </a>
     </div>
   );
 }
